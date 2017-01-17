@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "types":[
+      "hammerjs"
+    ]
+
+  },
+  "exclude": [
+    "node_modules",
+    "**/*-aot.ts",
+    "/app/scripts/**/*.*"
+  ]
+}

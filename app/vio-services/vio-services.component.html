@@ -1,0 +1,34 @@
+<accordion>
+    <accordion-group #vpe_group>
+        <div accordion-heading>
+            Violox Parking Enforcement Program
+            <i class="pull-right float-xs-right glyphicon"
+               [ngClass]="{'glyphicon-chevron-down': vpe_group?._isOpen, 'glyphicon-chevron-right': !vpe_group?._isOpen}"></i>
+        </div>
+        Some interesting things about the program.
+    </accordion-group>
+    <accordion-group #eas_group>
+        <div accordion-heading>
+            Enforcement Alert System
+            <i class="pull-right float-xs-right glyphicon"
+               [ngClass]="{'glyphicon-chevron-down': eas_group?._isOpen, 'glyphicon-chevron-right': !eas_group?._isOpen}"></i>
+        </div>
+        Interesting things about the system.
+    </accordion-group>
+    <accordion-group #asq_group>
+        <div accordion-heading>
+            Assessment Services for Quality
+            <i class="pull-right float-xs-right glyphicon"
+               [ngClass]="{'glyphicon-chevron-down': asq_group?._isOpen, 'glyphicon-chevron-right': !asq_group?._isOpen}"></i>
+        </div>
+        Interesting stuff about the services.
+    </accordion-group>
+    <accordion-group #vpay_group>
+        <div accordion-heading>
+            Immobilization Payment System
+            <i class="pull-right float-xs-right glyphicon"
+               [ngClass]="{'glyphicon-chevron-down': vpay_group?._isOpen, 'glyphicon-chevron-right': !vpay_group?._isOpen}"></i>
+        </div>
+        Interesting stuff about the system.
+    </accordion-group>
+</accordion>
