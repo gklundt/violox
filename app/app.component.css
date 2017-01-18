@@ -5,7 +5,10 @@
 }
 
 .home-image {
-    background: url('/public/assets/images/violox-downtown.jpg') no-repeat center fixed border-box;
+    background: url('/public/assets/images/violox-downtown.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     width: 100%;
     height: 400px;
@@ -35,4 +38,39 @@
     width: 150px;
     color: black;
     background-color: white;
+}
+
+@media screen and (max-height: 199px) and (min-height: 1px) {
+    .screen-height{
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-height: 399px) and (min-height: 200px) {
+    .screen-height{
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-height: 599px) and (min-height: 400px) {
+    .screen-height{
+        min-height: 600px;
+    }
+}
+
+@media screen and (max-height: 799px) and (min-height: 600px) {
+    .screen-height{
+        min-height: 800px;
+    }
+}
+
+@media screen and (max-height: 999px) and (min-height: 800px) {
+    .screen-height{
+        min-height: 1000px;
+    }
+}
+@media screen and (min-height: 1000px) {
+    .screen-height{
+        min-height: 1200px;
+    }
 }

@@ -8,10 +8,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class=" navbar-brand ">
-                <img class="media" src="/public/assets/images/violox-logo-orange-96x68.svg"
-                     style="max-height: 100%; box-sizing: border-box; float: left; ">
-                <span style="margin-left: 10px; clear: both;"><small>Parking Enforcement Evolved</small> </span>
+            <div class=" navbar-brand " style="position: relative">
+                <img src="/public/assets/images/violox-logo-orange-96x68.svg"
+                     style="height: 40px; box-sizing: border-box; float: left; position: absolute; top: 5px ">
+                <span style="margin-left: 70px; clear: both;"><small>Parking Enforcement Evolved</small> </span>
             </div>
         </div>
 
@@ -31,7 +31,7 @@
 </nav>
 <div id="home">
     <div class="home-image">
-        <div class="overlay-scrim"style="position: absolute; top: 0px;">
+        <div class="overlay-scrim" style="position: absolute; top: 0px;">
             <div style="position: relative; bottom: -360px; width: 100%;" class="container-fluid">
                 <div class="row visible-lg">
                     <div class="col-lg-3 text-center">
@@ -91,9 +91,25 @@
 </div>
 
 <div id="vio-services" style="height: 50px; background-color: #761c19"></div>
-<vio-svc></vio-svc>
-<div style="height: 1000px; background-color: #761c19"></div>
+<div class="screen-height" style="background-color: #761c19">
+    <div style="background-color: #ffffff">
+        <vio-svc></vio-svc>
+    </div>
+</div>
 
-<div id="vio-bio" style="height: 1000px; background-color: #1b6d85;"></div>
-<div id="vio-contact" style="height: 1000px; background-color: #4cae4c"></div>
-<div id="vio-networks" style="height: 1000px; background-color: #8a6d3b"></div>
+<div id="vio-networks" style="height: 50px; background-color: #8a6d3b"></div>
+<div class="screen-height" style="background-color: #8a6d3b">
+    Networks
+</div>
+
+<div id="vio-bio" style="height: 50px; background-color: #1b6d85;"></div>
+<div class="screen-height" style="background-color: #1b6d85;">
+    <div style="background-color: #ffffff">
+        <vio-bio></vio-bio>
+    </div>
+</div>
+
+<div id="vio-contact" style="height: 50px; background-color: #4cae4c"></div>
+<div class="screen-height" style="background-color: #4cae4c">
+    Contacts
+</div>
