@@ -4,6 +4,44 @@
     display: table
 }
 
+.jitterbug {
+    margin-top: 5px;
+    width: 62px;
+    height:40px;
+    display:block;
+    background:transparent url('../public/assets/images/violox-logo-nav-roll-over-62x40.svg') center top no-repeat;
+}
+
+.jitterbug:hover {
+    background-image: url('../public/assets/images/violox-logo-62x40.svg');
+}
+
+.navbar {
+    position: relative;
+}
+
+.brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
+
+.brand-large {
+    position: relative;
+    left: 50%;
+    margin-left: -126px !important;  /* 50% of your logo width */
+    display: inline-block;
+}
+
+.signup{
+    background-color: steelblue;
+    color: white;
+}
+.signup:hover{
+    background-color: darkblue;
+    color: white;
+}
 .home-image {
     background: url('/public/assets/images/violox-downtown.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -31,13 +69,15 @@
 
 .panel-default {
     width: 125px;
-    color: white;
+    color: #9d9d9d;
+    position: relative;
 }
 
 .panel-default:hover {
-    width: 150px;
-    color: black;
-    background-color: white;
+    width: 125px;
+    color: white;
+    background-color: black;
+    position: relative;
 }
 
 @media screen and (max-height: 199px) and (min-height: 1px) {
