@@ -1,43 +1,8 @@
-.clearfix {
-    content: "";
-    clear: both;
-    display: table
-}
-
-.jitterbug {
-    margin-top: 5px;
-    width: 62px;
-    height:40px;
-    display:block;
-    background:transparent url('../public/assets/images/violox-logo-62x40.svg') center top no-repeat;
-}
-
-.jitterbug:hover {
-    background-image: url('../public/assets/images/violox-logo-nav-roll-over-62x40.svg');
-}
 
 .navbar {
     position: relative;
 }
 
-
-.panel-default {
-    width: 125px;
-    color: #9d9d9d;
-    position: relative;
-}
-
-.panel-default:hover {
-    width: 125px;
-    color: white;
-    background-color: black;
-    position: relative;
-}
-
-
-.navbar-nav>li>a:hover{
-    color: steelblue;
-}
 @media screen and (max-height: 199px) and (min-height: 1px) {
     .screen-height{
         min-height: 200px;

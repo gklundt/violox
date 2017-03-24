@@ -9,6 +9,7 @@ import {VioAboutComponent} from "./vio-about/vio-about.component";
 import {VioHeaderComponent} from "./vio-header/vio-header.component";
 import {VioPartnersComponent} from "./vio-partners/vio-partners.component";
 import {VioContactsComponent} from "./vio-contacts/vio-contacts.component";
+import {VioNavComponent} from "./vio-nav/vio-nav.component";
 @NgModule({
     imports: [BrowserModule, AccordionModule.forRoot(), TabsModule.forRoot(), Angular2FontawesomeModule],
     declarations: [
@@ -18,7 +19,8 @@ import {VioContactsComponent} from "./vio-contacts/vio-contacts.component";
         VioAboutComponent,
         VioHeaderComponent,
         VioPartnersComponent,
-        VioContactsComponent
+        VioContactsComponent,
+        VioNavComponent
     ],
     bootstrap: [AppComponent]
 })

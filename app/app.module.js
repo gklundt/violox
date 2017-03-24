@@ -17,6 +17,7 @@ var vio_about_component_1 = require("./vio-about/vio-about.component");
 var vio_header_component_1 = require("./vio-header/vio-header.component");
 var vio_partners_component_1 = require("./vio-partners/vio-partners.component");
 var vio_contacts_component_1 = require("./vio-contacts/vio-contacts.component");
+var vio_nav_component_1 = require("./vio-nav/vio-nav.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -32,7 +33,8 @@ AppModule = __decorate([
             vio_about_component_1.VioAboutComponent,
             vio_header_component_1.VioHeaderComponent,
             vio_partners_component_1.VioPartnersComponent,
-            vio_contacts_component_1.VioContactsComponent
+            vio_contacts_component_1.VioContactsComponent,
+            vio_nav_component_1.VioNavComponent
         ],
         bootstrap: [app_component_1.AppComponent]
     })
