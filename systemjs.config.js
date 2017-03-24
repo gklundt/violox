@@ -22,6 +22,7 @@
             'hammerjs': 'npm:hammerjs',
             //'moment': 'npm:moment'
             'ng2-bootstrap': 'npm:ng2-bootstrap/',
+            'angular2-fontawesome': 'node_modules/angular2-fontawesome',
 
             'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
             // 'ts': 'npm:plugin-typescript/lib/plugin.js',
@@ -37,6 +38,7 @@
                 defaultExtension: 'js'
             },
             'ng2-bootstrap': {format: 'cjs', main: 'bundles/ng2-bootstrap.umd.js', defaultExtension: 'js'},
+            'angular2-fontawesome': { defaultExtension: 'js' }
             //'moment': {main: 'moment.js', defaultExtension: 'js'}
 
         }

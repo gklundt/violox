@@ -142,7 +142,7 @@ gulp.task('scripts', () =>
 
 // Scan your HTML for assets & optimize them
 gulp.task('html', () => {
-    return gulp.src(['!node_modules/**/*','./**/*.html'])
+    return gulp.src(['!node_modules/**/*', './**/*.html'])
         .pipe($.useref({
             searchPath: '{.tmp,./}',
             noAssets: true
@@ -248,20 +248,25 @@ gulp.task('copy-ng-scripts', () => {
     gulp.src('node_modules/bootstrap-sass/assets/fonts/bootstrap/**/*.*')
         .pipe(gulp.dest('dist/public/assets/fonts/bootstrap'))
         .pipe(gulp.dest('public/assets/fonts/bootstrap'));
-
+    gulp.src('node_modules/font-awesome/fonts/**/*.*')
+        .pipe(gulp.dest('dist/public/assets/fonts/font-awesome'))
+        .pipe(gulp.dest('public/assets/fonts/font-awesome'));
 });
 
 gulp.task('clean-ng-scripts', () => {
-     del([
-    //     'app/scripts/systemjs',
-    //     'app/scripts/@angular',
-    //     'app/scripts/rxjs',
-    //     'app/scripts/reflect-metadata',
-    //     'app/scripts/core-js',
-    //     'app/scripts/zone',
-    //     'app/scripts/hammerjs',
-    //     'app/scripts/ng2-bootstrap',
-         'public/assets/fonts/bootstrap'], {dot: true})
+    del([
+        //     'app/scripts/systemjs',
+        //     'app/scripts/@angular',
+        //     'app/scripts/rxjs',
+        //     'app/scripts/reflect-metadata',
+        //     'app/scripts/core-js',
+        //     'app/scripts/zone',
+        //     'app/scripts/hammerjs',
+        //     'app/scripts/ng2-bootstrap',
+        'public/assets/fonts/bootstrap',
+        'public/assets/fonts/font-awesome',
+        'dist/public/assets/fonts/bootstrap',
+        'dist/public/assets/fonts/font-awesome'], {dot: true})
 });
 
 

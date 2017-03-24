@@ -7,17 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-var VioBioComponent = (function () {
-    function VioBioComponent() {
+var VioPartnersComponent = (function () {
+    function VioPartnersComponent() {
     }
-    return VioBioComponent;
+    return VioPartnersComponent;
 }());
-VioBioComponent = __decorate([
+VioPartnersComponent = __decorate([
     core_1.Component({
-        selector: "vio-bio",
-        templateUrl: "./app/vio-bio/vio-bio.component.html",
-        styleUrls: ["./app/vio-bio/vio-bio.component.css"]
+        selector: "vio-partners",
+        templateUrl: "./app/vio-partners/vio-partners.component.html",
+        styleUrls: ["./app/vio-partners/vio-partners.component.css"]
     })
-], VioBioComponent);
-exports.VioBioComponent = VioBioComponent;
-//# sourceMappingURL=vio-bio.component.js.map
+], VioPartnersComponent);
+exports.VioPartnersComponent = VioPartnersComponent;
+//# sourceMappingURL=vio-partners.component.js.map
