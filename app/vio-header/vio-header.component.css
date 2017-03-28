@@ -1,19 +1,39 @@
 .home-image {
     /*background: url('/public/assets/images/downtown-bw.jpg') no-repeat center center fixed;*/
-    background: url('/public/assets/images/violox-downtown.jpg') no-repeat center center fixed;
+    /*background: url('/public/assets/images/violox-downtown.jpg') no-repeat center center fixed;*/
+    /*background: url('/public/assets/images/downtown3000x450.jpg') no-repeat center center fixed;*/
+    background: url('/public/assets/images/downtown1250x852.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 450px;
-    /*-webkit-filter: grayscale(100%); !* Safari 6.0 - 9.0 *!*/
-    /*filter: grayscale(100%);*/
-    /*-webkit-transform: translate(0px, -110px);*/
-    /*-moz-transform: translate(0px, -110px);*/
-    /*-ms-transform: translate(0px, -110px);*/
-    /*-o-transform: translate(0px, -110px);*/
-    /*transform: translate(0px, -110px);;*/
+    height: 100%;
+    /*-webkit-transform: translate(0px, -10px);*/
+    /*-moz-transform: translate(0px, -10px);*/
+    /*-ms-transform: translate(0px, -10px);*/
+    /*-o-transform: translate(0px, -10px);*/
+    /*transform: translate(0px, -10px);;*/
+}
+
+.brand-large {
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: -60px;
+
+}
+
+.text-center {
+    position: absolute;
+    width: 790px;
+    color: #ffffff;
+    font: 50px arial, sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: 220px;
 }
 
 .overlay-scrim {
@@ -21,66 +41,26 @@
     background: -o-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 80%);
     background: -moz-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 80%);
     background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 80%);
-    height: 450px;
+    height: 500px;
     width: 100%;
+    padding-top: 100px;
 }
 
-
-.brand-lg {
+.signup {
     position: absolute;
-    left: 50%;
-    /*margin-left: -50px !important;  !* 50% of your logo width *!*/
-    display: block;
-}
-
-.brand-md {
-    position: absolute;
-    left: 45%;
-    /*margin-left: -50px !important;  !* 50% of your logo width *!*/
-    display: block;
-}
-
-.brand-sm {
-    position: absolute;
-    left: 20%;
-    /*margin-left: -50px !important;  !* 50% of your logo width *!*/
-    display: block;
-}
-
-.brand-xs {
-    position: absolute;
-    left: 55%;
-    /*margin-left: -50px !important;  !* 50% of your logo width *!*/
-    display: block;
-}
-
-.brand-large {
-    position: relative;
-    left: 50%;
-    margin-left: -126px !important;  /* 50% of your logo width */
-    display: inline-block;
-}
-
-.signup{
     background-color: steelblue;
     color: white;
     font-size: 30px;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: 310px;
 }
-.signup:hover{
+
+.signup:hover {
+    position: absolute;
     background-color: #33607f;
     color: white;
 }
 
-.panel-default {
-    width: 125px;
-    color: #9d9d9d;
-    position: relative;
-}
-
-.panel-default:hover {
-    width: 125px;
-    color: white;
-    background-color: black;
-    position: relative;
-}
 

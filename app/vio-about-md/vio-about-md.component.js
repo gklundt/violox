@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var VioContactsComponent = (function () {
-    function VioContactsComponent() {
+var VioAboutMdComponent = (function () {
+    function VioAboutMdComponent() {
     }
-    VioContactsComponent = __decorate([
+    VioAboutMdComponent = __decorate([
         core_1.Component({
-            selector: "vio-contacts",
-            templateUrl: "./app/vio-contacts/vio-contacts.component.html",
-            styleUrls: ["./app/vio-contacts/vio-contacts.component.css"]
+            selector: "vio-about-md",
+            templateUrl: "./app/vio-about-md/vio-about-md.component.html",
+            styleUrls: ["./app/vio-about-md/vio-about-md.component.css", "../../public/assets/styles/theme.css"]
         })
-    ], VioContactsComponent);
-    return VioContactsComponent;
+    ], VioAboutMdComponent);
+    return VioAboutMdComponent;
 }());
-exports.VioContactsComponent = VioContactsComponent;
-//# sourceMappingURL=vio-contacts.component.js.map
+exports.VioAboutMdComponent = VioAboutMdComponent;
+//# sourceMappingURL=vio-about-md.component.js.map

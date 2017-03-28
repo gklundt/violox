@@ -1,5 +1,26 @@
+.barnacle-car {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+
+}
+
 .container {
     margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.about-header{
+    margin: 0 auto;
+    width: 550px;
+}
+.about-header>h4{
+    font-family: "Arial", "sans-serif";
+    font-size: 20pt;
+    color: steelblue;
+    text-align: center;
+    display: block;
+    width: 100%;
 }
 
 .my-fancy-container {
@@ -30,19 +51,10 @@
     margin: 0 auto;
 }
 
-.future {
-    font-family: "Arial", "sans-serif";
-    font-size: 20pt;
-    color: steelblue;
-    text-align: center;
-    display: block;
-    width: 100%;
-
-}
 
 .powered-by-learn-more {
     display: block;
-    width: 500px;
+    width: 400px;
     margin: 0 auto;
 }
 
@@ -50,7 +62,6 @@
     position: relative;
     display: inline;
     width: 195px;
-    margin-right: 50px;
 }
 
 .learn-more {
@@ -65,7 +76,6 @@
     border-color: steelblue;
     background-color: white;
     color: steelblue;
-    margin-left: 50px;
 }
 
 #learn-more-button:hover {

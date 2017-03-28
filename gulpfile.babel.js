@@ -210,7 +210,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
     runSequence(
         'styles',
-        ['lint', 'html', 'scripts', 'images', 'copy', 'ng-app'],
+        ['lint', 'html', 'scripts', 'images', 'copy', 'ng-app', 'sass'],
         'copy-ng-scripts',
         cb
     )
@@ -243,12 +243,15 @@ gulp.task('copy-ng-scripts', () => {
     gulp.src('node_modules/zone.js/dist/**/*.js').pipe(gulp.dest('dist/node_modules/zone.js/dist'));
     gulp.src('node_modules/hammerjs/**/*.js').pipe(gulp.dest('dist/node_modules/hammerjs'));
     gulp.src('node_modules/ng2-bootstrap/**/*.{js,css}').pipe(gulp.dest('dist/node_modules/ng2-bootstrap'));
+    gulp.src('node_modules/angular2-fontawesome/**/*.{js,css}').pipe(gulp.dest('dist/node_modules/angular2-fontawesome'));
     gulp.src('node_modules/bootstrap/dist/**/*.{js,css}').pipe(gulp.dest('dist/node_modules/bootstrap/dist'));
     gulp.src('node_modules/jquery/dist/**/*.{js,css}').pipe(gulp.dest('dist/node_modules/jquery/dist'));
     gulp.src('node_modules/bootstrap-sass/assets/fonts/bootstrap/**/*.*')
+        .pipe(gulp.dest('dist/node_modules/bootstrap-sass/assets/fonts/bootstrap'))
         .pipe(gulp.dest('dist/public/assets/fonts/bootstrap'))
         .pipe(gulp.dest('public/assets/fonts/bootstrap'));
     gulp.src('node_modules/font-awesome/fonts/**/*.*')
+        .pipe(gulp.dest('dist/node_modules/font-awesome/fonts'))
         .pipe(gulp.dest('dist/public/assets/fonts/font-awesome'))
         .pipe(gulp.dest('public/assets/fonts/font-awesome'));
 });

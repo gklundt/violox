@@ -5,19 +5,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var VioAboutComponent = (function () {
     function VioAboutComponent() {
     }
+    VioAboutComponent = __decorate([
+        core_1.Component({
+            selector: "vio-about",
+            templateUrl: "./app/vio-about/vio-about.component.html",
+            styleUrls: ["./app/vio-about/vio-about.component.css", "../../public/assets/styles/theme.css"]
+        })
+    ], VioAboutComponent);
     return VioAboutComponent;
 }());
-VioAboutComponent = __decorate([
-    core_1.Component({
-        selector: "vio-about",
-        templateUrl: "./app/vio-about/vio-about.component.html",
-        styleUrls: ["./app/vio-about/vio-about.component.css", "../../public/assets/styles/theme.css"]
-    })
-], VioAboutComponent);
 exports.VioAboutComponent = VioAboutComponent;
 //# sourceMappingURL=vio-about.component.js.map
