@@ -9,14 +9,14 @@ var core_1 = require("@angular/core");
 var VioPartnersComponent = (function () {
     function VioPartnersComponent() {
     }
-    VioPartnersComponent = __decorate([
-        core_1.Component({
-            selector: "vio-partners",
-            templateUrl: "./app/vio-partners/vio-partners.component.html",
-            styleUrls: ["./app/vio-partners/vio-partners.component.css"]
-        })
-    ], VioPartnersComponent);
     return VioPartnersComponent;
 }());
+VioPartnersComponent = __decorate([
+    core_1.Component({
+        selector: "vio-partners",
+        templateUrl: "./app/vio-partners/vio-partners.component.html",
+        styleUrls: ["./app/vio-partners/vio-partners.component.css"]
+    })
+], VioPartnersComponent);
 exports.VioPartnersComponent = VioPartnersComponent;
 //# sourceMappingURL=vio-partners.component.js.map

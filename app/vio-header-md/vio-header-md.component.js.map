@@ -1,0 +1,1 @@
+{"version":3,"file":"vio-header-md.component.js","sourceRoot":"","sources":["vio-header-md.component.ts"],"names":[],"mappings":";;;;;;;AAAA,sCAAwC;AAOxC,IAAa,oBAAoB;IAAjC;IACA,CAAC;IAAD,2BAAC;AAAD,CAAC,AADD,IACC;AADY,oBAAoB;IALhC,gBAAS,CAAC;QACP,QAAQ,EAAE,eAAe;QACzB,WAAW,EAAE,kDAAkD;QAC/D,SAAS,EAAE,CAAC,iDAAiD,CAAC;KACjE,CAAC;GACW,oBAAoB,CAChC;AADY,oDAAoB"}

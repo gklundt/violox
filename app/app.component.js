@@ -9,14 +9,14 @@ var core_1 = require("@angular/core");
 var AppComponent = (function () {
     function AppComponent() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: "my-app",
-            templateUrl: "./app/app.component.html",
-            styleUrls: ["./app/app.component.css"]
-        })
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: "my-app",
+        templateUrl: "./app/app.component.html",
+        styleUrls: ["./app/app.component.css"]
+    })
+], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

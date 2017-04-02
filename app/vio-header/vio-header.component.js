@@ -9,14 +9,14 @@ var core_1 = require("@angular/core");
 var VioHeaderComponent = (function () {
     function VioHeaderComponent() {
     }
-    VioHeaderComponent = __decorate([
-        core_1.Component({
-            selector: "vio-header",
-            templateUrl: "./app/vio-header/vio-header.component.html",
-            styleUrls: ["./app/vio-header/vio-header.component.css"]
-        })
-    ], VioHeaderComponent);
     return VioHeaderComponent;
 }());
+VioHeaderComponent = __decorate([
+    core_1.Component({
+        selector: "vio-header",
+        templateUrl: "./app/vio-header/vio-header.component.html",
+        styleUrls: ["./app/vio-header/vio-header.component.css"]
+    })
+], VioHeaderComponent);
 exports.VioHeaderComponent = VioHeaderComponent;
 //# sourceMappingURL=vio-header.component.js.map

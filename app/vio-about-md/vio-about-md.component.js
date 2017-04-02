@@ -9,14 +9,14 @@ var core_1 = require("@angular/core");
 var VioAboutMdComponent = (function () {
     function VioAboutMdComponent() {
     }
-    VioAboutMdComponent = __decorate([
-        core_1.Component({
-            selector: "vio-about-md",
-            templateUrl: "./app/vio-about-md/vio-about-md.component.html",
-            styleUrls: ["./app/vio-about-md/vio-about-md.component.css", "../../public/assets/styles/theme.css"]
-        })
-    ], VioAboutMdComponent);
     return VioAboutMdComponent;
 }());
+VioAboutMdComponent = __decorate([
+    core_1.Component({
+        selector: "vio-about-md",
+        templateUrl: "./app/vio-about-md/vio-about-md.component.html",
+        styleUrls: ["./app/vio-about-md/vio-about-md.component.css", "../../public/assets/styles/theme.css"]
+    })
+], VioAboutMdComponent);
 exports.VioAboutMdComponent = VioAboutMdComponent;
 //# sourceMappingURL=vio-about-md.component.js.map

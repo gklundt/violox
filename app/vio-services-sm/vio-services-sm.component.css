@@ -1,0 +1,12 @@
+.container-fluid{
+    background-color: #33607f;
+}
+
+.panel{
+    margin-top: 10px;
+}
+
+.service-container{
+    display: block;
+    height: 320px;
+}

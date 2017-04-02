@@ -9,14 +9,14 @@ var core_1 = require("@angular/core");
 var VioContactsComponent = (function () {
     function VioContactsComponent() {
     }
-    VioContactsComponent = __decorate([
-        core_1.Component({
-            selector: "vio-contacts",
-            templateUrl: "./app/vio-contacts/vio-contacts.component.html",
-            styleUrls: ["./app/vio-contacts/vio-contacts.component.css"]
-        })
-    ], VioContactsComponent);
     return VioContactsComponent;
 }());
+VioContactsComponent = __decorate([
+    core_1.Component({
+        selector: "vio-contacts",
+        templateUrl: "./app/vio-contacts/vio-contacts.component.html",
+        styleUrls: ["./app/vio-contacts/vio-contacts.component.css"]
+    })
+], VioContactsComponent);
 exports.VioContactsComponent = VioContactsComponent;
 //# sourceMappingURL=vio-contacts.component.js.map

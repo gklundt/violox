@@ -9,14 +9,14 @@ var core_1 = require("@angular/core");
 var VioBenefitsComponent = (function () {
     function VioBenefitsComponent() {
     }
-    VioBenefitsComponent = __decorate([
-        core_1.Component({
-            selector: "vio-benefits",
-            templateUrl: "./app/vio-benefits/vio-benefits.component.html",
-            styleUrls: ["./app/vio-benefits/vio-benefits.component.css"]
-        })
-    ], VioBenefitsComponent);
     return VioBenefitsComponent;
 }());
+VioBenefitsComponent = __decorate([
+    core_1.Component({
+        selector: "vio-benefits",
+        templateUrl: "./app/vio-benefits/vio-benefits.component.html",
+        styleUrls: ["./app/vio-benefits/vio-benefits.component.css"]
+    })
+], VioBenefitsComponent);
 exports.VioBenefitsComponent = VioBenefitsComponent;
 //# sourceMappingURL=vio-benefits.component.js.map
