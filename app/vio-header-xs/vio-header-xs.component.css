@@ -1,47 +1,46 @@
 .home-image {
-    /*background: url('/public/assets/images/downtown-bw.jpg') no-repeat center center fixed;*/
-    /*background: url('/public/assets/images/violox-downtown.jpg') no-repeat center center fixed;*/
-    /*background: url('/public/assets/images/downtown3000x450.jpg') no-repeat center center fixed;*/
-    background: url('/public/assets/images/downtown320x480.jpg') no-repeat center fixed;
+    background: #1d2f45 url('/public/assets/images/dallas-767x630.jpg') no-repeat center center fixed;
+    /*height: 511px;*/
     -webkit-background-size: contain;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    /*-webkit-transform: translate(0px, -10px);*/
-    /*-moz-transform: translate(0px, -10px);*/
-    /*-ms-transform: translate(0px, -10px);*/
-    /*-o-transform: translate(0px, -10px);*/
-    /*transform: translate(0px, -10px);;*/
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+
+    -webkit-transform: translate(0px, -100px);
+    -moz-transform: translate(0px, -100px);
+    -ms-transform: translate(0px, -100px);
+    -o-transform: translate(0px, -100px);
+    transform: translate(0px, -100px);
 }
 
-/*.brand-large {*/
-    /*position: absolute;*/
-    /*left: 50%;*/
-    /*margin-left: -180px;*/
-    /*margin-top: -60px;*/
-
-/*}*/
+.brand-large {
+    position: absolute;
+    left: 50%;
+    margin-left: -180px;
+    margin-top: 150px;
+    transform: scale(.6, .6);
+}
 
 .text-center {
     position: absolute;
     width: 320px;
     color: #ffffff;
-    font: 50px arial, sans-serif;
+    font: 30px arial, sans-serif;
     text-align: center;
     vertical-align: middle;
     left: 50%;
     margin-left: -160px;
-    margin-top: 120px;
+    margin-top: 430px;
 }
 
 .overlay-scrim {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 80%);
-    background: -o-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 80%);
-    background: -moz-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 80%);
-    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 80%);
-    height: 500px;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
+    height: 630px;
     width: 100%;
-    padding-top: 100px;
+    /*padding-top: 100px;*/
 }
 
 .signup {
@@ -52,7 +51,7 @@
     width: 300px;
     left: 50%;
     margin-left: -150px;
-    margin-top: 310px;
+    margin-top: 550px;
 }
 
 .signup:hover {

@@ -1,4 +1,31 @@
 .section-buffer{
-    height: 1000px;
-    background-color: #333;
+    height: 630px;
+    background: #1d2f45 url('/public/assets/images/dallas-767x630.jpg') no-repeat center center fixed;
+    /*height: 511px;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-transform: translate(0px, -100px);
+    -moz-transform: translate(0px, -100px);
+    -ms-transform: translate(0px, -100px);
+    -o-transform: translate(0px, -100px);
+    transform: translate(0px, -100px);
+}
+
+.overlay-scrim {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
+    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
+    height: 630px;
+    width: 100%;
+    /*padding-top: 100px;*/
+}
+
+.contact_blurb{
+    text-align: center;
+    color: white;
+    padding-top: 500px;
 }
