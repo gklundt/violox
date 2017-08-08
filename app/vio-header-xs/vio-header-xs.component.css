@@ -6,6 +6,10 @@
     -o-background-size: contain;
     background-size: contain;
 
+    background-attachment: scroll;
+    top: 0;
+    left:0;
+        
     -webkit-transform: translate(0px, -100px);
     -moz-transform: translate(0px, -100px);
     -ms-transform: translate(0px, -100px);
@@ -13,6 +17,27 @@
     transform: translate(0px, -100px);
 }
 
+.home-image2 {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 767px;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 767px) { /* Specific to this particular image */
+    .home-image2 {
+        left: 50%;
+        margin-left: -512px;   /* 50% */
+    }
+}
 .brand-large {
     position: absolute;
     left: 50%;

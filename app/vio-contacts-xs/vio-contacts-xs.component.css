@@ -6,12 +6,13 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: scroll;
 
-    -webkit-transform: translate(0px, -100px);
-    -moz-transform: translate(0px, -100px);
-    -ms-transform: translate(0px, -100px);
-    -o-transform: translate(0px, -100px);
-    transform: translate(0px, -100px);
+    /*-webkit-transform: translate(0px, -100px);*/
+    /*-moz-transform: translate(0px, -100px);*/
+    /*-ms-transform: translate(0px, -100px);*/
+    /*-o-transform: translate(0px, -100px);*/
+    /*transform: translate(0px, -100px);*/
 }
 
 .overlay-scrim {
