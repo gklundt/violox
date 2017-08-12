@@ -17,3 +17,14 @@
     background-color: #eeeeee;
 }
 
+.extend_glyph{
+    width: 107px;
+    height: 106px;
+    padding: 7px;
+    margin: 0;
+}
+
+.extend_glyph_inner{
+    background-color: orangered;
+    padding: 10px 0 10px 0;
+}

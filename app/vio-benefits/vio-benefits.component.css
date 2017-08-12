@@ -3,7 +3,7 @@
     background-color: orangered;
 }
 
-.benefit-label-text{
+.benefit-label-text {
     color: grey;
 }
 
@@ -17,3 +17,14 @@
     background-color: #eeeeee;
 }
 
+.extend_glyph {
+    width: 107px;
+    height: 106px;
+    padding: 7px;
+    margin: 0;
+}
+
+.extend_glyph_inner {
+    background-color: orangered;
+    padding: 12px 0 12px 0;
+}
