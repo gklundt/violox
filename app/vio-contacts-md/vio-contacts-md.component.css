@@ -1,4 +1,31 @@
+.home-image {
+    background: url('/public/assets/images/dallas-1199x799.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contact_blurb{
+    text-align: center;
+    color: white;
+    padding-top: 475px;
+}
+
+.container-fluid{
+    padding-right: 0;
+    padding-left: 0;
+}
+.overlay-scrim {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 255) 70%);
+    background: -o-linear-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 255) 70%);
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 255) 70%);
+    background: linear-gradient(rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 255) 70%);
+    height: 799px;
+    width: 100%;
+    padding-top: 100px;
+}
+
 .section-buffer{
-    height: 1000px;
-    background-color: #333;
+    height: 799px;
 }
