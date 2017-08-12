@@ -1,19 +1,11 @@
 .home-image {
-    /*background: url('/public/assets/images/downtown-bw.jpg') no-repeat center center fixed;*/
-    /*background: url('/public/assets/images/violox-downtown.jpg') no-repeat center center fixed;*/
-    /*background: url('/public/assets/images/downtown3000x450.jpg') no-repeat center center fixed;*/
-    background: url('/public/assets/images/downtown1250x852.jpg') no-repeat center center fixed;
+    background: url('/public/assets/images/dallas-991x660.jpg') no-repeat center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     width: 100%;
     height: 100%;
-    /*-webkit-transform: translate(0px, -10px);*/
-    /*-moz-transform: translate(0px, -10px);*/
-    /*-ms-transform: translate(0px, -10px);*/
-    /*-o-transform: translate(0px, -10px);*/
-    /*transform: translate(0px, -10px);;*/
 }
 
 .brand-large {
@@ -26,7 +18,6 @@
 
 .text-center {
     position: absolute;
-    width: 790px;
     color: #ffffff;
     font: 50px arial, sans-serif;
     text-align: center;
