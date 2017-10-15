@@ -1,1 +1,0 @@
-{"version":3,"file":"vio-about-md.component.js","sourceRoot":"","sources":["vio-about-md.component.ts"],"names":[],"mappings":";;;;;;;AAAA,sCAAwC;AAOxC,IAAa,mBAAmB;IAAhC;IACA,CAAC;IAAD,0BAAC;AAAD,CAAC,AADD,IACC;AADY,mBAAmB;IAL/B,gBAAS,CAAC;QACP,QAAQ,EAAE,cAAc;QACxB,WAAW,EAAE,gDAAgD;QAC7D,SAAS,EAAE,CAAC,+CAA+C,EAAE,sCAAsC,CAAC;KACvG,CAAC;GACW,mBAAmB,CAC/B;AADY,kDAAmB"}

@@ -23,7 +23,6 @@
     margin-bottom: 0;
 }
 
-
 .panel-default {
     width: 125px;
     color: black;
@@ -40,6 +39,9 @@
 .navbar-default{
     background-color: white;
 }
+
+.navbar-default .navbar-nav>li>a:active,
+.navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover{
     color: orangered;
 }
@@ -65,6 +67,8 @@ a.btn.btn-danger{
     color: white;
 }
 
+.navbar-default .navbar-nav>li>a.btn-danger:active,
+.navbar-default .navbar-nav>li>a.btn-danger:focus,
 .navbar-default .navbar-nav>li>a.btn-danger:hover{
     color: orangered;
 }

@@ -1,8 +1,43 @@
 <!-- The Modal -->
-<div id="myModal" class="modal">
+<div id="myModal" class="vio-modal">
     <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close" (click)="hideModal()">&times;</span>
-        <p>Form coming soon.</p>
+    <div class="vio-modal-content">
+        <div class="vio-modal-header">
+            <img src="/public/assets/images/splashlogo.png"
+                 style="width: 47px; height: 31px; ">
+            <span class="close" (click)="hideModal()">&times;</span>
+        </div>
+        <div class="vio-modal-body" style="text-align: center">
+            <form>
+                <input type="text" placeholder="Name" class="vio-input">
+                <input type="text" placeholder="Company" class="vio-input">
+                <input type="text" placeholder="Title" class="vio-input">
+                <input type="text" placeholder="Email" class="vio-input">
+                <input type="text" placeholder="Phone" class="vio-input">
+                <button class="btn btn-default">CLICK ME</button>
+            </form>
+        </div>
+        <div class="vio-modal-footer">
+            <div style="float: left;">
+                <div style="display: inline-block; text-align: center">
+                    <i class="fa fa-plus-circle fa-orange"></i>
+                    <br/>
+                    <i class="fa fa-clock-o fa-orange"></i>
+                </div>
+                <div style="display: inline-block; text-align: left">
+                    <span class="fa-orange-label"> SAFETY.</span>
+                    <br/>
+                    <span class="fa-orange-label"> SAVE TIME.</span>
+                </div>
+            </div>
+            <div style="float: right;">
+                <div style="display: inline-block; text-align: center">
+                    <i class="fa fa-dollar fa-orange"></i><br/><i class="fa fa-smile-o fa-orange"></i>
+                </div>
+                <div style="display: inline-block; text-align: left">
+                    <span class="fa-orange-label"> INCREASE REVENUE.</span><br/><span class="fa-orange-label"> SATISFIED TENANTS.</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
