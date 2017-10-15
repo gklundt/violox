@@ -9,32 +9,70 @@
     width: 62px;
     height:40px;
     display:block;
-    background:transparent url('../../public/assets/images/violox-logo-62x40.svg') center top no-repeat;
+    background: url('../../public/assets/images/splashlogo.png') no-repeat ;
+    -webkit-background-size: 62px 40px;
+    background-size: 62px 40px;
 }
 
 .jitterbug:hover {
-    background-image: url('../../public/assets/images/violox-logo-nav-roll-over-62x40.svg');
+    /*background-image: url('../../public/assets/images/violox-logo-nav-roll-over-62x40.svg');*/
 }
 
 .navbar {
     position: relative;
+    margin-bottom: 0;
 }
 
 
 .panel-default {
     width: 125px;
-    color: #9d9d9d;
+    color: black;
     position: relative;
 }
 
 .panel-default:hover {
     width: 125px;
-    color: white;
+    color: black;
     background-color: black;
     position: relative;
 }
 
+.navbar-default{
+    background-color: white;
+}
+.navbar-default .navbar-nav>li>a:hover{
+    color: orangered;
+}
 
-.navbar-nav>li>a:hover{
-    color: steelblue;
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-text{
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+a.btn.btn-danger{
+    width: 180px;
+}
+.btn-danger{
+    color: white;
+    background-color: orangered;
+}
+
+.navbar-default .navbar-nav>li>a.btn-danger{
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a.btn-danger:hover{
+    color: orangered;
+}
+
+.menu-text{
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+
 }

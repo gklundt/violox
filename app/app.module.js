@@ -5,6 +5,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
@@ -34,26 +35,54 @@ var vio_contacts_component_1 = require("./vio-contacts/vio-contacts.component");
 var vio_contacts_md_component_1 = require("./vio-contacts-md/vio-contacts-md.component");
 var vio_contacts_sm_component_1 = require("./vio-contacts-sm/vio-contacts-sm.component");
 var vio_contacts_xs_component_1 = require("./vio-contacts-xs/vio-contacts-xs.component");
+var vio_enforce_xs_component_1 = require("./vio-enforce-xs/vio-enforce-xs.component");
+var vio_permit_xs_component_1 = require("./vio-permit-xs/vio-permit-xs.component");
+var vio_alert_xs_component_1 = require("./vio-alert-xs/vio-alert-xs.component");
+var vio_home_component_1 = require("./vio-home/vio-home.component");
+var WindowRef_service_1 = require("./WindowRef.service");
 var vio_nav_component_1 = require("./vio-nav/vio-nav.component");
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule, ng2_bootstrap_1.AccordionModule.forRoot(), ng2_bootstrap_1.TabsModule.forRoot(), angular2_fontawesome_1.Angular2FontawesomeModule],
+            declarations: [app_component_1.AppComponent,
+                vio_services_component_1.VioServicesComponent,
+                vio_services_md_component_1.VioServicesMdComponent,
+                vio_services_sm_component_1.VioServicesSmComponent,
+                vio_services_xs_component_1.VioServicesXsComponent,
+                vio_benefits_component_1.VioBenefitsComponent,
+                vio_benefits_md_component_1.VioBenefitsMdComponent,
+                vio_benefits_sm_component_1.VioBenefitsSmComponent,
+                vio_benefits_xs_component_1.VioBenefitsXsComponent,
+                vio_about_component_1.VioAboutComponent,
+                vio_about_md_component_1.VioAboutMdComponent,
+                vio_about_sm_component_1.VioAboutSmComponent,
+                vio_about_xs_component_1.VioAboutXsComponent,
+                vio_header_component_1.VioHeaderComponent,
+                vio_header_md_component_1.VioHeaderMdComponent,
+                vio_header_sm_component_1.VioHeaderSmComponent,
+                vio_header_xs_component_1.VioHeaderXsComponent,
+                vio_partners_component_1.VioPartnersComponent,
+                vio_partners_md_component_1.VioPartnersMdComponent,
+                vio_partners_sm_component_1.VioPartnersSmComponent,
+                vio_partners_xs_component_1.VioPartnersXsComponent,
+                vio_contacts_component_1.VioContactsComponent,
+                vio_contacts_md_component_1.VioContactsMdComponent,
+                vio_contacts_sm_component_1.VioContactsSmComponent,
+                vio_contacts_xs_component_1.VioContactsXsComponent,
+                vio_nav_component_1.VioNavComponent,
+                vio_enforce_xs_component_1.VioEnforceXsComponent,
+                vio_permit_xs_component_1.VioPermitXsComponent,
+                vio_alert_xs_component_1.VioAlertXsComponent,
+                vio_home_component_1.VioHomeComponent
+            ],
+            providers: [WindowRef_service_1.WindowRefService],
+            bootstrap: [app_component_1.AppComponent]
+        })
+    ], AppModule);
     return AppModule;
 }());
-AppModule = __decorate([
-    core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, ng2_bootstrap_1.AccordionModule.forRoot(), ng2_bootstrap_1.TabsModule.forRoot(), angular2_fontawesome_1.Angular2FontawesomeModule],
-        declarations: [app_component_1.AppComponent,
-            vio_services_component_1.VioServicesComponent, vio_services_md_component_1.VioServicesMdComponent, vio_services_sm_component_1.VioServicesSmComponent, vio_services_xs_component_1.VioServicesXsComponent,
-            vio_benefits_component_1.VioBenefitsComponent, vio_benefits_md_component_1.VioBenefitsMdComponent, vio_benefits_sm_component_1.VioBenefitsSmComponent, vio_benefits_xs_component_1.VioBenefitsXsComponent,
-            vio_about_component_1.VioAboutComponent, vio_about_md_component_1.VioAboutMdComponent, vio_about_sm_component_1.VioAboutSmComponent, vio_about_xs_component_1.VioAboutXsComponent,
-            vio_header_component_1.VioHeaderComponent, vio_header_md_component_1.VioHeaderMdComponent, vio_header_sm_component_1.VioHeaderSmComponent, vio_header_xs_component_1.VioHeaderXsComponent,
-            vio_partners_component_1.VioPartnersComponent, vio_partners_md_component_1.VioPartnersMdComponent, vio_partners_sm_component_1.VioPartnersSmComponent, vio_partners_xs_component_1.VioPartnersXsComponent,
-            vio_contacts_component_1.VioContactsComponent, vio_contacts_md_component_1.VioContactsMdComponent, vio_contacts_sm_component_1.VioContactsSmComponent, vio_contacts_xs_component_1.VioContactsXsComponent,
-            vio_nav_component_1.VioNavComponent
-        ],
-        bootstrap: [app_component_1.AppComponent]
-    })
-], AppModule);
 exports.AppModule = AppModule;
 //# sourceMappingURL=app.module.js.map

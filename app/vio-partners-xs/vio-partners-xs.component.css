@@ -1,5 +1,17 @@
-.section-buffer{
+.section-buffer {
     text-align: center;
     padding: 20px;
     background-color: #ffffff;
+}
+
+.partner-image {
+    height: 60px;
+    width: 300px;
+    margin: auto;
+    background: url('/public/assets/images/association-logos-488x60.png') no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    padding: 0px;
 }

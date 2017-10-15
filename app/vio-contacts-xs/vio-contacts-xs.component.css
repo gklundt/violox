@@ -1,32 +1,59 @@
-.section-buffer{
-    height: 630px;
-    background: #1d2f45 url('/public/assets/images/dallas-767x630.jpg') no-repeat center center fixed;
-    /*height: 511px;*/
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: scroll;
-
-    /*-webkit-transform: translate(0px, -100px);*/
-    /*-moz-transform: translate(0px, -100px);*/
-    /*-ms-transform: translate(0px, -100px);*/
-    /*-o-transform: translate(0px, -100px);*/
-    /*transform: translate(0px, -100px);*/
+.contact-logo {
+    width: 71px;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
-.overlay-scrim {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
-    background: -o-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
-    background: -moz-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
-    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
-    height: 630px;
-    width: 100%;
-    /*padding-top: 100px;*/
+.glyph-part > .fa.fa-2x {
+    font-size: 23px;
 }
 
-.contact_blurb{
-    text-align: center;
-    color: white;
-    padding-top: 500px;
+.copyright {
+    text-align: left;
+    font-size: 8px;
+    font-weight: 300;
+    color: orangered;
+}
+
+.phone-link{
+    color:#3a3a3a;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.phone-link:hover{
+    color:orangered;
+    text-decoration: none;
+}
+
+.header-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header-sub-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.self-link {
+    color: black;
+    text-decoration: none;
+}
+
+.self-link:hover {
+    color: orangered;
+    text-decoration: none;
 }

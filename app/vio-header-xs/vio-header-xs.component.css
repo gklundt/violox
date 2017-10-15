@@ -1,88 +1,55 @@
 .home-image {
-    background: #1d2f45 url('/public/assets/images/dallas-767x630.jpg') no-repeat center center fixed;
-    /*height: 511px;*/
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-
-    background-attachment: scroll;
+    background: #1d2f45 url('/public/assets/images/lg_barnvid.png') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size:  cover;
+    background-size:  cover;
     top: 0;
     left:0;
-        
-    -webkit-transform: translate(0px, -100px);
-    -moz-transform: translate(0px, -100px);
-    -ms-transform: translate(0px, -100px);
-    -o-transform: translate(0px, -100px);
-    transform: translate(0px, -100px);
-}
-
-.home-image2 {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 767px;
-
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-@media screen and (max-width: 767px) { /* Specific to this particular image */
-    .home-image2 {
-        left: 50%;
-        margin-left: -512px;   /* 50% */
-    }
-}
-.brand-large {
-    position: absolute;
-    left: 50%;
-    margin-left: -180px;
-    margin-top: 150px;
-    transform: scale(.6, .6);
-}
-
-.text-center {
-    position: absolute;
-    width: 320px;
-    color: #ffffff;
-    font: 30px arial, sans-serif;
-    text-align: center;
-    vertical-align: middle;
-    left: 50%;
-    margin-left: -160px;
-    margin-top: 430px;
 }
 
 .overlay-scrim {
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
-    background: -o-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
-    background: -moz-linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
-    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 255) 65%);
-    height: 630px;
-    width: 100%;
-    /*padding-top: 100px;*/
+    background-color: rgba(0,78,128,.7);
+    padding: 25px 0 25px 0;
 }
 
-.signup {
-    position: absolute;
-    background-color: steelblue;
+.header-title {
+    font-family: "Roboto";
     color: white;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
     width: 300px;
-    left: 50%;
-    margin-left: -150px;
-    margin-top: 550px;
 }
-
-.signup:hover {
-    position: absolute;
-    background-color: #33607f;
+div{
+    margin:auto;
+}
+.header-text {
+    font-family: "Roboto";
     color: white;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    width: 300px;
 }
 
+.btn-default {
+    margin: auto;
+    background-color: orangered;;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-default:hover {
+    margin: auto;
+    background-color: #C63500;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
 

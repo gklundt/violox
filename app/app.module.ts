@@ -35,19 +35,49 @@ import {VioContactsMdComponent} from "./vio-contacts-md/vio-contacts-md.componen
 import {VioContactsSmComponent} from "./vio-contacts-sm/vio-contacts-sm.component";
 import {VioContactsXsComponent} from "./vio-contacts-xs/vio-contacts-xs.component";
 
+import {VioEnforceXsComponent} from "./vio-enforce-xs/vio-enforce-xs.component";
+import {VioPermitXsComponent} from "./vio-permit-xs/vio-permit-xs.component";
+import {VioAlertXsComponent} from "./vio-alert-xs/vio-alert-xs.component";
+import {VioHomeComponent} from "./vio-home/vio-home.component";
+
+import {WindowRefService} from "./WindowRef.service";
+
 import {VioNavComponent} from "./vio-nav/vio-nav.component";
 
 @NgModule({
     imports: [BrowserModule, AccordionModule.forRoot(), TabsModule.forRoot(), Angular2FontawesomeModule],
-    declarations: [AppComponent,
-        VioServicesComponent, VioServicesMdComponent, VioServicesSmComponent, VioServicesXsComponent,
-        VioBenefitsComponent, VioBenefitsMdComponent, VioBenefitsSmComponent, VioBenefitsXsComponent,
-        VioAboutComponent, VioAboutMdComponent, VioAboutSmComponent, VioAboutXsComponent,
-        VioHeaderComponent, VioHeaderMdComponent, VioHeaderSmComponent, VioHeaderXsComponent,
-        VioPartnersComponent, VioPartnersMdComponent, VioPartnersSmComponent, VioPartnersXsComponent,
-        VioContactsComponent, VioContactsMdComponent, VioContactsSmComponent, VioContactsXsComponent,
-        VioNavComponent
+    declarations: [AppComponent
+        , VioServicesComponent
+        , VioServicesMdComponent
+        , VioServicesSmComponent
+        , VioServicesXsComponent
+        , VioBenefitsComponent
+        , VioBenefitsMdComponent
+        , VioBenefitsSmComponent
+        , VioBenefitsXsComponent
+        , VioAboutComponent
+        , VioAboutMdComponent
+        , VioAboutSmComponent
+        , VioAboutXsComponent
+        , VioHeaderComponent
+        , VioHeaderMdComponent
+        , VioHeaderSmComponent
+        , VioHeaderXsComponent
+        , VioPartnersComponent
+        , VioPartnersMdComponent
+        , VioPartnersSmComponent
+        , VioPartnersXsComponent
+        , VioContactsComponent
+        , VioContactsMdComponent
+        , VioContactsSmComponent
+        , VioContactsXsComponent
+        , VioNavComponent
+        , VioEnforceXsComponent
+        , VioPermitXsComponent
+        , VioAlertXsComponent
+        , VioHomeComponent
     ],
+    providers: [WindowRefService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
