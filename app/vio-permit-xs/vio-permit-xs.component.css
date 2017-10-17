@@ -1,11 +1,11 @@
 .permit-logo {
-    background: url('/public/assets/images/permit_temp.png') no-repeat center;
+    background: url('/public/assets/images/tenpark.png') no-repeat center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;
     width: 300px;
-    height: 100px;
+    height: 200px;
     margin: auto;
 }
 

@@ -1,5 +1,6 @@
 import {Component, HostListener, Injectable, OnInit} from "@angular/core";
 import {ModalService} from "../modal.service";
+import {VioContactComponent} from "../vio-viewstate/vio-contact.component";
 
 @Component({
     selector: "vio-modal-request-xs",
@@ -9,7 +10,12 @@ import {ModalService} from "../modal.service";
 
 @Injectable()
 export class VioModalRequestXsComponent {
+    _c: VioContactComponent;
 
+    constructor(){
+        // this._c = new VioContactComponent();
+        // this._c.sendEmail();
+    }
 
     // When the user clicks on the button, open the modal
     public showModal(): any {

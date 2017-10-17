@@ -9,6 +9,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var VioModalRequestXsComponent = (function () {
     function VioModalRequestXsComponent() {
+        // this._c = new VioContactComponent();
+        // this._c.sendEmail();
     }
     // When the user clicks on the button, open the modal
     VioModalRequestXsComponent.prototype.showModal = function () {
