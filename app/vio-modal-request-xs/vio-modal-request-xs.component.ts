@@ -1,6 +1,7 @@
-import {Component, HostListener, Injectable, OnInit} from "@angular/core";
-import {ModalService} from "../modal.service";
+import {Component, HostListener, Injectable, Inject} from "@angular/core";
+import {Http} from "@angular/http";
 import {VioContactComponent} from "../vio-viewstate/vio-contact.component";
+import {RequestDemo} from "../requestDemo";
 
 @Component({
     selector: "vio-modal-request-xs",
@@ -11,10 +12,30 @@ import {VioContactComponent} from "../vio-viewstate/vio-contact.component";
 @Injectable()
 export class VioModalRequestXsComponent {
     _c: VioContactComponent;
+    private data: RequestDemo;
 
-    constructor(){
-        // this._c = new VioContactComponent();
-        // this._c.sendEmail();
+
+    constructor(@Inject(Http) private h: Http) {
+        this.data = new RequestDemo();
+    }
+
+    submitted = false;
+    private body: FormData;
+
+
+    onSubmit() {
+        this.h
+        this.body = new FormData();
+        this.body.append("request_name", this.data.request_name);
+        this.body.append("request_company", this.data.request_company);
+        this.body.append("request_title", this.data.request_title);
+        this.body.append("request_email", this.data.request_email);
+        this.body.append("request_phone", this.data.request_phone);
+        this.h
+            .post("http://violox.com/cgi-bin/notify-sales"
+                , this.body)
+            .subscribe();
+        this.hideModal();
     }
 
     // When the user clicks on the button, open the modal

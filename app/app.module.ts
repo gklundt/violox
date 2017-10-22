@@ -1,5 +1,7 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
 import {AccordionModule, TabsModule} from "ng2-bootstrap";
 import {Angular2FontawesomeModule} from "angular2-fontawesome/angular2-fontawesome";
@@ -26,6 +28,8 @@ import {ModalService} from "./modal.service";
         , AccordionModule.forRoot()
         , TabsModule.forRoot()
         , Angular2FontawesomeModule
+        , FormsModule
+        , HttpModule
     ],
     declarations: [
         AppComponent

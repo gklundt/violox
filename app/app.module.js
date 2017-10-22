@@ -8,6 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var ng2_bootstrap_1 = require("ng2-bootstrap");
 var angular2_fontawesome_1 = require("angular2-fontawesome/angular2-fontawesome");
@@ -34,7 +36,9 @@ var AppModule = (function () {
                 platform_browser_1.BrowserModule,
                 ng2_bootstrap_1.AccordionModule.forRoot(),
                 ng2_bootstrap_1.TabsModule.forRoot(),
-                angular2_fontawesome_1.Angular2FontawesomeModule
+                angular2_fontawesome_1.Angular2FontawesomeModule,
+                forms_1.FormsModule,
+                http_1.HttpModule
             ],
             declarations: [
                 app_component_1.AppComponent,

@@ -8,12 +8,17 @@
             <span class="close" (click)="hideModal()">&times;</span>
         </div>
         <div class="vio-modal-body" style="text-align: center">
-            <form>
-                <input type="text" placeholder="Name" class="vio-input">
-                <input type="text" placeholder="Company" class="vio-input">
-                <input type="text" placeholder="Title" class="vio-input">
-                <input type="text" placeholder="Email" class="vio-input">
-                <input type="text" placeholder="Phone" class="vio-input">
+            <form name="form" (ngSubmit)="onSubmit()" #f="ngForm">
+                <input type="text" name="request_name" placeholder="Name" required class="vio-input"
+                       [(ngModel)]="data.request_name" #requestName="ngModel">
+                <input type="text" name="request_company" placeholder="Company" class="vio-input"
+                       [(ngModel)]="data.request_company" #requestName="ngModel">
+                <input type="text" name="request_title" placeholder="Title" class="vio-input"
+                       [(ngModel)]="data.request_title" #requestName="ngModel">
+                <input type="email" name="request_email" placeholder="Email" class="vio-input"
+                       [(ngModel)]="data.request_email" #requestName="ngModel">
+                <input type="tel" name="request_phone" placeholder="Phone" class="vio-input"
+                       [(ngModel)]="data.request_phone" #requestName="ngModel">
                 <button class="btn btn-default">CLICK ME</button>
             </form>
         </div>
