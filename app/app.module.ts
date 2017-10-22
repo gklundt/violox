@@ -14,11 +14,17 @@ import {VioHeaderXsComponent} from "./vio-header-xs/vio-header-xs.component";
 import {VioPartnersXsComponent} from "./vio-partners-xs/vio-partners-xs.component";
 import {VioContactsXsComponent} from "./vio-contacts-xs/vio-contacts-xs.component";
 import {VioEnforceXsComponent} from "./vio-enforce-xs/vio-enforce-xs.component";
+import {VioEnforceMdComponent} from "./vio-enforce-md/vio-enforce-md.component";
+import {VioEnforceLgComponent} from "./vio-enforce-lg/vio-enforce-lg.component";
 import {VioAlertXsComponent} from "./vio-alert-xs/vio-alert-xs.component";
+import {VioAlertMdComponent} from "./vio-alert-md/vio-alert-md.component";
+import {VioAlertLgComponent} from "./vio-alert-lg/vio-alert-lg.component";
 import {VioHomeComponent} from "./vio-home/vio-home.component";
 import {VioNavComponent} from "./vio-nav/vio-nav.component";
 import {VioModalRequestXsComponent} from "./vio-modal-request-xs/vio-modal-request-xs.component";
 import {VioPermitXsComponent} from "./vio-permit-xs/vio-permit-xs.component";
+import {VioPermitMdComponent} from "./vio-permit-md/vio-permit-md.component";
+import {VioPermitLgComponent} from "./vio-permit-lg/vio-permit-lg.component";
 
 import {ModalService} from "./modal.service";
 
@@ -42,9 +48,15 @@ import {ModalService} from "./modal.service";
         , VioContactsXsComponent
         , VioNavComponent
         , VioEnforceXsComponent
+        , VioEnforceMdComponent
+        , VioEnforceLgComponent
         , VioModalRequestXsComponent
         , VioPermitXsComponent
+        , VioPermitMdComponent
+        , VioPermitLgComponent
         , VioAlertXsComponent
+        , VioAlertMdComponent
+        , VioAlertLgComponent
         , VioHomeComponent
     ],
     providers: [ModalService],

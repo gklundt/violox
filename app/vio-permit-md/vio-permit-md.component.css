@@ -1,0 +1,94 @@
+.permit-logo {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/public/assets/images/tenpark.png');
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+.center-services{
+    width: 710px;
+    height: 400px;
+    padding: 0;
+    margin: auto;
+    border: 0;
+
+}
+
+.horiz-blocks-left {
+    float: left;
+    width: 350px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.horiz-blocks-right {
+    float: left;
+    width: 350px;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-default {
+    margin: auto;
+    background-color: orangered;;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-default:hover {
+    margin: auto;
+    background-color: #C63500;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.text-div {
+    width: 350px;
+    text-align: center;
+    margin: auto;
+}
+
+.header-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.header-sub-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.self-link {
+    color: orangered;
+    font-weight: 700;
+}
+
+.self-link:hover {
+    color: #C63500;
+    font-weight: 700;
+    text-decoration: none;
+}
+

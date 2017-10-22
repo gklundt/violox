@@ -21,11 +21,17 @@ var vio_header_xs_component_1 = require("./vio-header-xs/vio-header-xs.component
 var vio_partners_xs_component_1 = require("./vio-partners-xs/vio-partners-xs.component");
 var vio_contacts_xs_component_1 = require("./vio-contacts-xs/vio-contacts-xs.component");
 var vio_enforce_xs_component_1 = require("./vio-enforce-xs/vio-enforce-xs.component");
+var vio_enforce_md_component_1 = require("./vio-enforce-md/vio-enforce-md.component");
+var vio_enforce_lg_component_1 = require("./vio-enforce-lg/vio-enforce-lg.component");
 var vio_alert_xs_component_1 = require("./vio-alert-xs/vio-alert-xs.component");
+var vio_alert_md_component_1 = require("./vio-alert-md/vio-alert-md.component");
+var vio_alert_lg_component_1 = require("./vio-alert-lg/vio-alert-lg.component");
 var vio_home_component_1 = require("./vio-home/vio-home.component");
 var vio_nav_component_1 = require("./vio-nav/vio-nav.component");
 var vio_modal_request_xs_component_1 = require("./vio-modal-request-xs/vio-modal-request-xs.component");
 var vio_permit_xs_component_1 = require("./vio-permit-xs/vio-permit-xs.component");
+var vio_permit_md_component_1 = require("./vio-permit-md/vio-permit-md.component");
+var vio_permit_lg_component_1 = require("./vio-permit-lg/vio-permit-lg.component");
 var modal_service_1 = require("./modal.service");
 var AppModule = (function () {
     function AppModule() {
@@ -51,9 +57,15 @@ var AppModule = (function () {
                 vio_contacts_xs_component_1.VioContactsXsComponent,
                 vio_nav_component_1.VioNavComponent,
                 vio_enforce_xs_component_1.VioEnforceXsComponent,
+                vio_enforce_md_component_1.VioEnforceMdComponent,
+                vio_enforce_lg_component_1.VioEnforceLgComponent,
                 vio_modal_request_xs_component_1.VioModalRequestXsComponent,
                 vio_permit_xs_component_1.VioPermitXsComponent,
+                vio_permit_md_component_1.VioPermitMdComponent,
+                vio_permit_lg_component_1.VioPermitLgComponent,
                 vio_alert_xs_component_1.VioAlertXsComponent,
+                vio_alert_md_component_1.VioAlertMdComponent,
+                vio_alert_lg_component_1.VioAlertLgComponent,
                 vio_home_component_1.VioHomeComponent
             ],
             providers: [modal_service_1.ModalService],
