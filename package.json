@@ -19,6 +19,7 @@
     "bootstrap-sass": "^3.3.7",
     "jquery": "^3.1.1",
     "ng2-bootstrap": "^1.2.1",
+    "ng2-scroll-to": "^1.0.7",
     "ngx-bootstrap": "^1.9.3"
   },
   "devDependencies": {

@@ -22,7 +22,8 @@
             'hammerjs': 'npm:hammerjs',
             'ng2-bootstrap': 'npm:ng2-bootstrap/',
             'angular2-fontawesome': 'node_modules/angular2-fontawesome',
-            'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js'
+            'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+            'ng2-scroll-to':'npm:ng2-scroll-to'
 //            'moment': 'npm:moment',
 //             'emailjs': 'npm:emailjs',
 //             'addressparser':'npm:addressparser',
@@ -51,7 +52,8 @@
             },
             rxjs: {defaultExtension: 'js'},
             'ng2-bootstrap': {format: 'cjs', main: 'bundles/ngx-bootstrap.umd.js', defaultExtension: 'js'},
-            'angular2-fontawesome': {defaultExtension: 'js'}
+            'angular2-fontawesome': {defaultExtension: 'js'},
+            'ng2-scroll-to':{main: 'index.js', defaultExtension: 'js'}
             // emailjs: {main: 'email.js', defaultExtension: 'js'},
             // moment: {main:'moment.js', defaultExtension: 'js'},
             // addressparser: {main:'lib/addressparser.js', defaultExtension: 'js'},

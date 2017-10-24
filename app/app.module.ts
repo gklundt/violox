@@ -5,7 +5,7 @@ import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
 import {AccordionModule, TabsModule} from "ng2-bootstrap";
 import {Angular2FontawesomeModule} from "angular2-fontawesome/angular2-fontawesome";
-
+import {ScrollToModule} from "ng2-scroll-to";
 import {VioServicesXsComponent} from "./vio-services-xs/vio-services-xs.component";
 import {VioBenefitsXsComponent} from "./vio-benefits-xs/vio-benefits-xs.component";
 import {VioAboutXsComponent} from "./vio-about-xs/vio-about-xs.component";
@@ -36,6 +36,7 @@ import {ModalService} from "./modal.service";
         , Angular2FontawesomeModule
         , FormsModule
         , HttpModule
+        , ScrollToModule.forRoot()
     ],
     declarations: [
         AppComponent

@@ -238,11 +238,13 @@ gulp.task('copy-ng-scripts', () => {
     gulp.src('node_modules/systemjs/dist/**/*.js').pipe(gulp.dest('dist/node_modules/systemjs/dist'));
     gulp.src('node_modules/@angular/**/*.{js,css,scss}').pipe(gulp.dest('dist/node_modules/@angular'));
     gulp.src('node_modules/rxjs/**/*.js').pipe(gulp.dest('dist/node_modules/rxjs'));
+    gulp.src('node_modules/ng2-scroll-to/**/*.js').pipe(gulp.dest('dist/node_modules/ng2-scroll-to'));
     gulp.src('node_modules/reflect-metadata/**/*.js').pipe(gulp.dest('dist/node_modules/reflect-metadata'));
     gulp.src('node_modules/core-js/**/*.js').pipe(gulp.dest('dist/node_modules/core-js'));
     gulp.src('node_modules/zone.js/dist/**/*.js').pipe(gulp.dest('dist/node_modules/zone.js/dist'));
     gulp.src('node_modules/hammerjs/**/*.js').pipe(gulp.dest('dist/node_modules/hammerjs'));
     gulp.src('node_modules/ng2-bootstrap/**/*.{js,css}').pipe(gulp.dest('dist/node_modules/ng2-bootstrap'));
+    gulp.src('node_modules/ngx-bootstrap/**/*.{js,css}').pipe(gulp.dest('dist/node_modules/ngx-bootstrap'));
     gulp.src('node_modules/angular2-fontawesome/**/*.{js,css}').pipe(gulp.dest('dist/node_modules/angular2-fontawesome'));
     gulp.src('node_modules/bootstrap/dist/**/*.{js,css}').pipe(gulp.dest('dist/node_modules/bootstrap/dist'));
     gulp.src('node_modules/jquery/dist/**/*.{js,css}').pipe(gulp.dest('dist/node_modules/jquery/dist'));

@@ -11,7 +11,7 @@ import {Component} from "@angular/core";
 
 export class VioHomeComponent {
     scrollFunction() {
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
             document.getElementById("to-top").style.display = "block";
         } else {
             document.getElementById("to-top").style.display = "none";

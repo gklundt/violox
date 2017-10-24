@@ -12,7 +12,7 @@ var VioHomeComponent = (function () {
     function VioHomeComponent() {
     }
     VioHomeComponent.prototype.scrollFunction = function () {
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
             document.getElementById("to-top").style.display = "block";
         }
         else {

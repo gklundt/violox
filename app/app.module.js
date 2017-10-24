@@ -13,6 +13,7 @@ var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var ng2_bootstrap_1 = require("ng2-bootstrap");
 var angular2_fontawesome_1 = require("angular2-fontawesome/angular2-fontawesome");
+var ng2_scroll_to_1 = require("ng2-scroll-to");
 var vio_services_xs_component_1 = require("./vio-services-xs/vio-services-xs.component");
 var vio_benefits_xs_component_1 = require("./vio-benefits-xs/vio-benefits-xs.component");
 var vio_about_xs_component_1 = require("./vio-about-xs/vio-about-xs.component");
@@ -44,7 +45,8 @@ var AppModule = (function () {
                 ng2_bootstrap_1.TabsModule.forRoot(),
                 angular2_fontawesome_1.Angular2FontawesomeModule,
                 forms_1.FormsModule,
-                http_1.HttpModule
+                http_1.HttpModule,
+                ng2_scroll_to_1.ScrollToModule.forRoot()
             ],
             declarations: [
                 app_component_1.AppComponent,

@@ -24,6 +24,9 @@
     text-decoration: none;
 }
 
+.phone-link:active,
+.phone-link:visited,
+.phone-link:focus,
 .phone-link:hover{
     color:orangered;
     text-decoration: none;
