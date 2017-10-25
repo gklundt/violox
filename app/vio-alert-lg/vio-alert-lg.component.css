@@ -1,20 +1,20 @@
 .alert-logo{
     background-repeat: no-repeat;
-    background-position: 0 -75px;
+    background-position: 50px -93px;
     background-image: url('/public/assets/images/MobileAlerts.png');
-    -webkit-background-size: contain;
-    -moz-background-size:  contain;
-    -o-background-size:  contain;
-    background-size:  contain;
+    -webkit-background-size: cover;
+    -moz-background-size:  cover;
+    -o-background-size:  cover;
+    background-size:  cover;
     width: 300px;
     height: 450px;
     margin: auto;
 }
 
 .center-services{
-    width: 710px;
-    height: 400px;
-    padding: 0;
+    width: 900px;
+    height: 470px;
+    padding: 30px 0 0 0;
     margin: auto;
     border: 0;
 
@@ -22,13 +22,15 @@
 
 .horiz-blocks-left {
     float: left;
-    width: 350px;
+    width: 270px;
     padding: 0;
+    height: 380px;
 }
 
 .horiz-blocks-right {
-    float: left;
-    width: 350px;
+    float: right;
+    width: 450px;
+    height: 380px;
     padding: 0;
     margin: 0;
 }
@@ -36,6 +38,7 @@
 .btn-default {
     margin: auto;
     background-color: orangered;;
+    border-color: orangered;
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 17px;

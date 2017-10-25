@@ -5,8 +5,8 @@
 }
 
 .get-started-panel {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: #444444;
     color: white
 }
@@ -14,6 +14,7 @@
 .btn-default {
     margin: auto;
     background-color: orangered;;
+    border-color: orangered;
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 17px;
@@ -48,4 +49,5 @@
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 300;
+    margin-bottom: 30px;
 }

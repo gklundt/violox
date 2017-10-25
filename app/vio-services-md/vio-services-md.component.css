@@ -1,0 +1,64 @@
+.security-panel {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background-color: #004E80;
+    color: white;
+}
+
+.police-hat {
+    background: url('/public/assets/images/police_hat.svg');
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+    height: 134px;
+    width: 128px;
+    margin: auto
+}
+
+.text-div {
+    width: 600px;
+    text-align: center;
+    margin: auto;
+}
+
+.btn-default {
+    margin: auto;
+    background-color: orangered;;
+    border-color: orangered;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn-default:hover {
+    margin: auto;
+    background-color: #C63500;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+.header-title {
+    font-family: "Roboto", sans-serif;;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.header-sub-title {
+    font-family: "Roboto", sans-serif;;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.header-text {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}

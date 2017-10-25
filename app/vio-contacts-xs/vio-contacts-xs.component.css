@@ -10,8 +10,8 @@
 }
 
 .copyright {
-    text-align: left;
-    font-size: 8px;
+    text-align: right;
+    font-size: 10px;
     font-weight: 300;
     color: orangered;
 }
@@ -25,7 +25,6 @@
 }
 
 .phone-link:active,
-.phone-link:visited,
 .phone-link:focus,
 .phone-link:hover{
     color:orangered;
@@ -59,4 +58,8 @@
 .self-link:hover {
     color: orangered;
     text-decoration: none;
+}
+
+ul{
+    padding-left: 0;
 }

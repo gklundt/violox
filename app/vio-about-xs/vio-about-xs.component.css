@@ -13,14 +13,14 @@
 }
 
 .overlay-scrim {
-    background-color: rgba(120, 120, 120, 0.85);
-    padding: 0px;
+    background-color: rgba(44, 44, 44, 0.85);
+    padding: 0;
     width: 100%;
     height: 100%;
 }
 
 .about-logo {
-    background: url('/public/assets/images/splashlogo.png') no-repeat center;
+    background: url('/public/assets/images/100x70_logo_white.svg') no-repeat center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -43,16 +43,12 @@
     margin: 0;
 }
 
-.glyph-part > .fa-3x {
-    font-size: 30px;
-}
-
 .glyph-footer {
     font-family: Roboto, sans-serif;
-    font-weight: 100;
-    font-size: 10px;
+    font-weight: 300;
+    font-size: 12px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
 .self-link {
@@ -61,7 +57,14 @@
 }
 
 .self-link:hover {
-    color: orange;
-    font-weight: 700;
+    color: orangered;
+    font-weight: 500;
     text-decoration: none;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -105px;
+    visibility: hidden;
 }

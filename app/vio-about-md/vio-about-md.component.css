@@ -1,0 +1,69 @@
+.home-image {
+    background: url('/public/assets/images/weserve_blue_overlay_320x182.png') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+.overlay-scrim {
+    background-color: rgba(44, 44, 44, 0.85);
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-logo {
+    background: url('/public/assets/images/100x70_logo_white.svg') no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 110px;
+    margin: auto;
+}
+
+.about-header {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.glyph-part {
+    width: 50px;
+    padding: 5px;
+    margin: 0;
+}
+
+.glyph-footer {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.self-link {
+    color: white;
+    font-weight: 500;
+}
+
+.self-link:hover {
+    color: orangered;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -105px;
+    visibility: hidden;
+}

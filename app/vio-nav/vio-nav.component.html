@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button"
+            <button type="button" id="hamburger"
                     class="navbar-toggle collapsed"
                     data-toggle="collapse"
                     data-target="#bs-example-navbar-collapse-1">
@@ -10,27 +10,57 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#vio-header" scrollTo class="jitterbug navbar-brand "
-               title="Home"></a>
+            <a href="#vio-header" scrollTo class="nav-logo navbar-brand" title="Home"></a>
         </div>
         <div class="navbar-collapse collapse navbar-right"
              id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
 
-                <li><a scrollTo href="#vio-serve" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">WHO WE SERVE</a></li>
+                <li><a class="nav-link"
+                       scrollTo href="#vio-serve"
+                       data-toggle="collapse"
+                       data-target="#bs-example-navbar-collapse-1">WHO WE SERVE</a></li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">THE GOODS<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle nav-link"
+                       data-toggle="dropdown"
+                       role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">THE GOODS<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#vio-enforce" scrollTo data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">ENFORCEMENT</a></li>
-                        <li><a href="#vio-permit" scrollTo data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">PERMITS</a></li>
-                        <li><a href="#vio-alert" scrollTo data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">ALERT</a></li>
+                        <li><a scrollTo href="#vio-enforce"
+                               data-toggle="collapse"
+                               data-target="#bs-example-navbar-collapse-1">ENFORCEMENT</a></li>
+                        <li><a scrollTo href="#vio-permit"
+                               data-toggle="collapse"
+                               data-target="#bs-example-navbar-collapse-1">PERMITS</a></li>
+                        <li><a scrollTo href="#vio-alert"
+                               data-toggle="collapse"
+                               data-target="#bs-example-navbar-collapse-1">ALERT</a></li>
+                        <li class="show-860" ><a scrollTo href="#vio-security"
+                               data-toggle="collapse"
+                               data-target="#bs-example-navbar-collapse-1">SECURITY PARTNERS</a></li>
                     </ul>
                 </li>
-                <li><a href="#vio-security" scrollTo data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">SECURITY PARTNERS</a></li>
-                <li class="visible-xs visible-md visible-lg"><a href="#vio-footer" scrollTo data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">COMPANY</a></li>
-                <li><a href="#" scrollTo data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><i class="fa fa-lock fa-1x"></i> LOGIN</a></li>
-                <li><a (click)="openModal()" class="btn btn-danger" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">PRICING & FREE DEMO</a></li>
+                <li class="hide-860">
+                    <a scrollTo href="#vio-security"
+                       data-toggle="collapse"
+                       data-target="#bs-example-navbar-collapse-1">SECURITY PARTNERS</a></li>
+                <li class="visible-xs visible-md visible-lg">
+                    <a scrollTo href="#vio-footer"
+                       data-toggle="collapse"
+                       data-target="#bs-example-navbar-collapse-1">COMPANY</a>
+                </li>
+                <li>
+                    <a href="#"
+                       data-toggle="collapse"
+                       data-target="#bs-example-navbar-collapse-1"><i class="fa fa-lock fa-1x"></i> LOGIN</a></li>
+                <li>
+                    <a (click)="openModal()" class="btn btn-danger"
+                       data-toggle="collapse"
+                       data-target="#bs-example-navbar-collapse-1">PRICING & FREE DEMO</a>
+                </li>
+
             </ul>
         </div>
     </div>

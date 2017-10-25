@@ -1,0 +1,16 @@
+.section-buffer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.partner-image {
+    height: 90px;
+    width: 600px;
+    background: url('/public/assets/images/association-logos-673x90.png') no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    margin: 20px auto 20px auto;
+}

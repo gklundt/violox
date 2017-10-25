@@ -1,6 +1,5 @@
 import {Component, HostListener, Injectable, Inject} from "@angular/core";
 import {Http} from "@angular/http";
-import {VioContactComponent} from "../vio-viewstate/vio-contact.component";
 import {RequestDemo} from "../requestDemo";
 
 @Component({
@@ -11,7 +10,6 @@ import {RequestDemo} from "../requestDemo";
 
 @Injectable()
 export class VioModalRequestXsComponent {
-    _c: VioContactComponent;
     private data: RequestDemo;
 
 
@@ -24,7 +22,7 @@ export class VioModalRequestXsComponent {
 
 
     onSubmit() {
-        this.h
+
         this.body = new FormData();
         this.body.append("request_name", this.data.request_name);
         this.body.append("request_company", this.data.request_company);

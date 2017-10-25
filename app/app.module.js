@@ -15,11 +15,16 @@ var ng2_bootstrap_1 = require("ng2-bootstrap");
 var angular2_fontawesome_1 = require("angular2-fontawesome/angular2-fontawesome");
 var ng2_scroll_to_1 = require("ng2-scroll-to");
 var vio_services_xs_component_1 = require("./vio-services-xs/vio-services-xs.component");
+var vio_services_md_component_1 = require("./vio-services-md/vio-services-md.component");
 var vio_benefits_xs_component_1 = require("./vio-benefits-xs/vio-benefits-xs.component");
+var vio_benefits_md_component_1 = require("./vio-benefits-md/vio-benefits-md.component");
 var vio_about_xs_component_1 = require("./vio-about-xs/vio-about-xs.component");
-var vio_header_component_1 = require("./vio-header/vio-header.component");
+var vio_about_md_component_1 = require("./vio-about-md/vio-about-md.component");
+var vio_header_lg_component_1 = require("./vio-header-lg/vio-header-lg.component");
+var vio_header_md_component_1 = require("./vio-header-md/vio-header-md.component");
 var vio_header_xs_component_1 = require("./vio-header-xs/vio-header-xs.component");
 var vio_partners_xs_component_1 = require("./vio-partners-xs/vio-partners-xs.component");
+var vio_partners_md_component_1 = require("./vio-partners-md/vio-partners-md.component");
 var vio_contacts_xs_component_1 = require("./vio-contacts-xs/vio-contacts-xs.component");
 var vio_enforce_xs_component_1 = require("./vio-enforce-xs/vio-enforce-xs.component");
 var vio_enforce_md_component_1 = require("./vio-enforce-md/vio-enforce-md.component");
@@ -51,11 +56,16 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 vio_services_xs_component_1.VioServicesXsComponent,
+                vio_services_md_component_1.VioServicesMdComponent,
                 vio_benefits_xs_component_1.VioBenefitsXsComponent,
+                vio_benefits_md_component_1.VioBenefitsMdComponent,
                 vio_about_xs_component_1.VioAboutXsComponent,
-                vio_header_component_1.VioHeaderComponent,
+                vio_about_md_component_1.VioAboutMdComponent,
+                vio_header_lg_component_1.VioHeaderLgComponent,
+                vio_header_md_component_1.VioHeaderMdComponent,
                 vio_header_xs_component_1.VioHeaderXsComponent,
                 vio_partners_xs_component_1.VioPartnersXsComponent,
+                vio_partners_md_component_1.VioPartnersMdComponent,
                 vio_contacts_xs_component_1.VioContactsXsComponent,
                 vio_nav_component_1.VioNavComponent,
                 vio_enforce_xs_component_1.VioEnforceXsComponent,

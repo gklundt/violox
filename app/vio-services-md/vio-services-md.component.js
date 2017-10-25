@@ -11,23 +11,23 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var modal_service_1 = require("../modal.service");
-var VioHeaderComponent = (function () {
-    function VioHeaderComponent(x) {
+var VioServicesMdComponent = (function () {
+    function VioServicesMdComponent(x) {
         this.x = x;
         this._modal = x.getSmallModal();
     }
-    VioHeaderComponent.prototype.openModal = function () {
+    VioServicesMdComponent.prototype.openModal = function () {
         return this._modal.showModal();
     };
-    VioHeaderComponent = __decorate([
+    VioServicesMdComponent = __decorate([
         core_1.Component({
-            selector: "vio-header",
-            templateUrl: "./app/vio-header/vio-header.component.html",
-            styleUrls: ["./app/vio-header/vio-header.component.css"]
+            selector: "vio-svc-md",
+            templateUrl: "./app/vio-services-md/vio-services-md.component.html",
+            styleUrls: ["./app/vio-services-md/vio-services-md.component.css"]
         }),
         __param(0, core_1.Inject(modal_service_1.ModalService))
-    ], VioHeaderComponent);
-    return VioHeaderComponent;
+    ], VioServicesMdComponent);
+    return VioServicesMdComponent;
 }());
-exports.VioHeaderComponent = VioHeaderComponent;
-//# sourceMappingURL=vio-header.component.js.map
+exports.VioServicesMdComponent = VioServicesMdComponent;
+//# sourceMappingURL=vio-services-md.component.js.map

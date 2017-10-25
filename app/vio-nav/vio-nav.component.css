@@ -1,37 +1,57 @@
-.jitterbug {
+.nav-logo {
     margin-top: 5px;
-    width: 62px;
-    height: 40px;
+    width: 175px;
+    height: 90px;
     display: block;
-    background: url('../../public/assets/images/splashlogo.png') no-repeat;
-    -webkit-background-size: 62px 40px;
-    background-size: 62px 40px;
+    background: url('../../public/assets/images/140x90_logo_with_slogan.svg') no-repeat 25px 0;
+    -webkit-background-size: contain;
+    background-size: contain;
 }
 
-.jitterbug:hover {
-    /*background-image: url('../../public/assets/images/violox-logo-nav-roll-over-62x40.svg');*/
+nav{
+    border:none;
+    box-shadow: 0 -5px 20px 0px black;
+}
+@media only screen and (max-width: 767px) {
+    .nav-logo {
+        height: 90px;
+        display: block;
+        background: url('../../public/assets/images/140x90_logo_with_slogan.svg') no-repeat 3px 0;
+        -webkit-background-size: contain;
+        background-size: contain;
+    }
+
+    .btn-danger{
+        margin-left: 15px;
+    }
 }
 
-/*.navbar {*/
-/*position: relative;*/
-/*margin-bottom: 0;*/
-/*}*/
+@media only screen and (min-width: 768px) and (max-width: 855px) {
+    .hide-860 {
+        display: none;
+    }
+}
 
-/*.panel-default {*/
-/*width: 125px;*/
-/*color: black;*/
-/*position: relative;*/
-/*}*/
+@media only screen and (max-width: 767px) {
+    .show-860 {
+        display: none;
+    }
+}
 
-/*.panel-default:hover {*/
-/*width: 125px;*/
-/*color: black;*/
-/*background-color: black;*/
-/*position: relative;*/
-/*}*/
+@media only screen and (min-width: 856px) {
+    .show-860 {
+        display: none;
+    }
+}
 
 .navbar-default {
     background-color: white;
+    font-family: Roboto, sans-serif;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .navbar-default .navbar-nav > li > a:active,
@@ -40,8 +60,7 @@
     color: orangered;
 }
 
-.navbar-default .navbar-nav > li > a,
-.navbar-default {
+.navbar-default .navbar-nav > li > a {
     font-family: Roboto, sans-serif;
     color: black;
     font-size: 13px;
@@ -57,6 +76,7 @@ a.btn.btn-danger {
 .btn-danger {
     color: white;
     background-color: orangered;
+    border-color: orangered;
 }
 
 .navbar-default .navbar-nav > li > a.btn-danger {
@@ -73,4 +93,16 @@ a.btn.btn-danger {
     font-size: 13px;
     font-weight: 500;
     color: black;
+}
+
+@media only screen and (min-width: 768px) {
+    #bs-example-navbar-collapse-1 {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #hamburger {
+        margin-top: 30px;
+    }
 }

@@ -25,6 +25,7 @@
 .btn-default {
     margin: auto;
     background-color: orangered;;
+    border-color: orangered;
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 17px;
@@ -44,19 +45,20 @@
 
 
 .header-title {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;;
     font-size: 30px;
     font-weight: 700;
 }
 
 .header-sub-title {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;;
     font-size: 20px;
     font-weight: 500;
 }
 
 .header-text {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 300;
+    margin-bottom: 30px;
 }

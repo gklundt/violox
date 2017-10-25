@@ -19,7 +19,6 @@ var VioModalRequestXsComponent = (function () {
         this.data = new requestDemo_1.RequestDemo();
     }
     VioModalRequestXsComponent.prototype.onSubmit = function () {
-        this.h;
         this.body = new FormData();
         this.body.append("request_name", this.data.request_name);
         this.body.append("request_company", this.data.request_company);

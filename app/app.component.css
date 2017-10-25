@@ -3,45 +3,9 @@
     position: relative;
 }
 
-/*@media screen and (max-height: 199px) and (min-height: 1px) {*/
-/*.screen-height{*/
-/*min-height: 200px;*/
-/*}*/
-/*}*/
-
-/*@media screen and (max-height: 399px) and (min-height: 200px) {*/
-/*.screen-height{*/
-/*min-height: 400px;*/
-/*}*/
-/*}*/
-
-/*@media screen and (max-height: 599px) and (min-height: 400px) {*/
-/*.screen-height{*/
-/*min-height: 600px;*/
-/*}*/
-/*}*/
-
-/*@media screen and (max-height: 799px) and (min-height: 600px) {*/
-/*.screen-height{*/
-/*min-height: 800px;*/
-/*}*/
-/*}*/
-
-/*@media screen and (max-height: 999px) and (min-height: 800px) {*/
-/*.screen-height{*/
-/*min-height: 1000px;*/
-/*}*/
-/*}*/
-
-/*@media screen and (min-height: 1000px) {*/
-/*.screen-height{*/
-/*min-height: 1200px;*/
-/*}*/
-/*}*/
-
 a.anchor{
     display: block;
     position: relative;
-    top:-56px;
+    top:-105px;
     visibility: hidden;
 }

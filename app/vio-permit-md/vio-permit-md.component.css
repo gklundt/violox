@@ -1,11 +1,11 @@
 .permit-logo {
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -40px -25px;
     background-image: url('/public/assets/images/tenpark.png');
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 350px;
     height: 350px;
     margin: auto;
@@ -13,8 +13,8 @@
 
 .center-services{
     width: 710px;
-    height: 400px;
-    padding: 0;
+    height: 430px;
+    padding: 30px 0 0 0;
     margin: auto;
     border: 0;
 
@@ -31,7 +31,7 @@
 .horiz-blocks-right {
     float: left;
     width: 350px;
-    height: 400px;
+    height: 325px;
     padding: 0;
     margin: 0;
 }
@@ -39,6 +39,7 @@
 .btn-default {
     margin: auto;
     background-color: orangered;;
+    border-color: orangered;
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 17px;

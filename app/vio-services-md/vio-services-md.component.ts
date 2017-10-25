@@ -3,11 +3,11 @@ import {VioModalRequestXsComponent} from "../vio-modal-request-xs/vio-modal-requ
 import {ModalService} from "../modal.service";
 
 @Component({
-    selector: "vio-header",
-    templateUrl: "./app/vio-header/vio-header.component.html",
-    styleUrls: ["./app/vio-header/vio-header.component.css"]
+    selector: "vio-svc-md",
+    templateUrl: "./app/vio-services-md/vio-services-md.component.html",
+    styleUrls: ["./app/vio-services-md/vio-services-md.component.css"]
 })
-export class VioHeaderComponent {
+export class VioServicesMdComponent {
     _modal: VioModalRequestXsComponent;
 
     constructor(@Inject(ModalService) private x: ModalService) {
@@ -18,5 +18,4 @@ export class VioHeaderComponent {
         return this._modal.showModal();
     }
 }
-
 
