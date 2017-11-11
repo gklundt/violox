@@ -8,13 +8,27 @@
     left:0;
 }
 
+#head-vid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
 .overlay-scrim {
     background-color: rgba(0,78,128,.7);
     padding: 25px 0 25px 0;
+    height: 85vh;
 }
 
 .header-title {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 35px;
     font-weight: 700;
@@ -28,7 +42,7 @@ div{
     margin:auto;
 }
 .header-text {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 20px;
     font-weight: 300;

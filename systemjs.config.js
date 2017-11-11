@@ -15,14 +15,14 @@
             '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
             '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
             '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
-            '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
+            // '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
             '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
             // other libraries
             'rxjs': 'npm:rxjs',
             'hammerjs': 'npm:hammerjs',
-            'ng2-bootstrap': 'npm:ng2-bootstrap/',
+            'ng2-bootstrap': 'npm:ngx-bootstrap/',
             'angular2-fontawesome': 'node_modules/angular2-fontawesome',
-            'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
+            // 'angular-in-memory-web-api': 'npm:angular-in-memory-web-api/bundles/in-memory-web-api.umd.js',
             'ng2-scroll-to':'npm:ng2-scroll-to'
 //            'moment': 'npm:moment',
 //             'emailjs': 'npm:emailjs',
@@ -50,7 +50,7 @@
                 main: 'main.js',
                 defaultExtension: 'js'
             },
-            rxjs: {defaultExtension: 'js'},
+            'rxjs': {defaultExtension: 'js'},
             'ng2-bootstrap': {format: 'cjs', main: 'bundles/ngx-bootstrap.umd.js', defaultExtension: 'js'},
             'angular2-fontawesome': {defaultExtension: 'js'},
             'ng2-scroll-to':{main: 'index.js', defaultExtension: 'js'}

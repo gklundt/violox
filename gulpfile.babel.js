@@ -50,7 +50,8 @@ gulp.task('sass', () => {
     return gulp.src('public/assets/styles/*.scss')
         .pipe(sass())
         .on('error', sass.logError)
-        .pipe(gulp.dest('public/assets/styles')).pipe(gulp.dest('dist/public/assets/styles'));
+        .pipe(gulp.dest('public/assets/styles'))
+        .pipe(gulp.dest('dist/public/assets/styles'));
 });
 
 // Optimize images
@@ -62,6 +63,12 @@ gulp.task('images', () =>
         })))
         .pipe(gulp.dest('dist/public/assets/images'))
         .pipe($.size({title: 'images'}))
+);
+
+gulp.task('videos', () =>
+    gulp.src('public/assets/videos/**/*')
+        .pipe(gulp.dest('dist/public/assets/videos'))
+        .pipe($.size({title: 'videos'}))
 );
 
 gulp.task('ng-app', () =>
@@ -210,7 +217,7 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
     runSequence(
         'styles',
-        ['lint', 'html', 'scripts', 'images', 'copy', 'ng-app', 'sass'],
+        ['lint', 'html', 'scripts', 'images', 'videos', 'copy', 'ng-app', 'sass'],
         'copy-ng-scripts',
         cb
     )

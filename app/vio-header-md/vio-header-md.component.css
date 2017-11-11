@@ -1,20 +1,36 @@
 .home-image {
     background: #1d2f45 url('/public/assets/images/lg_barnvid.png') no-repeat center;
     -webkit-background-size: cover;
-    -moz-background-size:  cover;
-    -o-background-size:  cover;
-    background-size:  cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     top: 0;
-    left:0;
+    left: 0;
+}
+
+#head-vid {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-width: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(0);
+    background-size: cover;
 }
 
 .overlay-scrim {
-    background-color: rgba(0,78,128,.7);
-    padding: 25px 0 25px 0;
+    background-color: rgba(0, 78, 128, .7);
+    padding: 0;
+    height: 425px;
+    overflow: hidden;
+
 }
 
 .header-title {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     color: white;
     font-size: 45px;
     font-weight: 700;
@@ -24,9 +40,11 @@
     line-height: 98%;
     margin-bottom: 30px;
 }
-div{
-    margin:auto;
+
+div {
+    margin: auto;
 }
+
 .header-text {
     font-family: "Roboto";
     color: white;

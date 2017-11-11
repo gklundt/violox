@@ -11,7 +11,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
-var ng2_bootstrap_1 = require("ng2-bootstrap");
+// import {AccordionModule, TabsModule} from "ng2-bootstrap";
 var angular2_fontawesome_1 = require("angular2-fontawesome/angular2-fontawesome");
 var ng2_scroll_to_1 = require("ng2-scroll-to");
 var vio_services_xs_component_1 = require("./vio-services-xs/vio-services-xs.component");
@@ -46,8 +46,6 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [
                 platform_browser_1.BrowserModule,
-                ng2_bootstrap_1.AccordionModule.forRoot(),
-                ng2_bootstrap_1.TabsModule.forRoot(),
                 angular2_fontawesome_1.Angular2FontawesomeModule,
                 forms_1.FormsModule,
                 http_1.HttpModule,
