@@ -17,7 +17,8 @@ var VioNavComponent = (function () {
         this._modal = x.getSmallModal();
     }
     VioNavComponent.prototype.openModal = function () {
-        return this._modal.showModal();
+        this._modal.showModal = true;
+        this._modal.showVideo = false;
     };
     VioNavComponent = __decorate([
         core_1.Component({

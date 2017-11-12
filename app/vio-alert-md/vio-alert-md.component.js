@@ -17,7 +17,8 @@ var VioAlertMdComponent = (function () {
         this._modal = x.getSmallModal();
     }
     VioAlertMdComponent.prototype.openModal = function () {
-        return this._modal.showModal();
+        this._modal.showModal = true;
+        this._modal.showVideo = false;
     };
     VioAlertMdComponent = __decorate([
         core_1.Component({

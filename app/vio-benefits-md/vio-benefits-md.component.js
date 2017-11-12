@@ -17,7 +17,8 @@ var VioBenefitsMdComponent = (function () {
         this._modal = x.getSmallModal();
     }
     VioBenefitsMdComponent.prototype.openModal = function () {
-        return this._modal.showModal();
+        this._modal.showModal = true;
+        this._modal.showVideo = false;
     };
     VioBenefitsMdComponent = __decorate([
         core_1.Component({

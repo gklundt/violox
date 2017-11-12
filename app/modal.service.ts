@@ -1,17 +1,14 @@
-import {OnInit, Injectable, Inject} from "@angular/core";
-import {Http} from "@angular/http";
-import {VioModalRequestXsComponent} from "./vio-modal-request-xs/vio-modal-request-xs.component";
+import {Injectable } from "@angular/core";
+import {ShowVideoController} from "./showVideoController";
+
 
 @Injectable()
-export class ModalService implements OnInit {
-    ngOnInit(): void {
-        this._small = new VioModalRequestXsComponent(this.h);
-    }
+export class ModalService {
 
-    _small: VioModalRequestXsComponent;
+    private _small: ShowVideoController;
 
-    constructor(@Inject(Http) private h: Http) {
-        this._small = new VioModalRequestXsComponent(this.h);
+    constructor() {
+        this._small = new ShowVideoController();
     }
 
     getSmallModal() {

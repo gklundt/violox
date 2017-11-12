@@ -1,5 +1,6 @@
 <!-- The Modal -->
-<div id="myModal" class="vio-modal">
+<div [ngStyle]="{'display' : showModal }" id="myModal" class="vio-modal">
+
 
     <!-- Modal content -->
     <div class="vio-modal-content visible-xs">
@@ -7,6 +8,10 @@
             <img src="/public/assets/images/splashlogo.png"
                  style="width: 47px; height: 31px; ">
             <span class="close" (click)="hideModal()">&times;</span>
+        </div>
+        <div [ngStyle]="{'display' : showVideo}" style="border: 0 none; background-color: #444444;">
+            <iframe src="https://player.vimeo.com/video/242300083" width="298" height="168" frameborder="0"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
         <div class="vio-modal-body" style="text-align: center">
             <form name="form" (ngSubmit)="onSubmit()" #f="ngForm">
@@ -53,16 +58,18 @@
                  style="width: 47px; height: 31px; ">
             <span class="close" (click)="hideModal()">&times;</span>
         </div>
-        <div style="border: 0 none;">
+        <div style="border: 0 none; background-color: #444444;">
+            <iframe [ngStyle]="{'display' : showVideo}" src="https://player.vimeo.com/video/242300083" width="520" height="292" frameborder="0"
+                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <!--<iframe src="https://player.vimeo.com/video/242300083" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
             <div class="vio-modal-body-note" style="text-align: center; float:left;">
                 <p></p>
                 <p class="modal-note-text-title">Great choice!<br/>Let's talk.</p>
                 <p class="modal-note-text-body">Don't perpetuate<br/>parking problems.<br/>Fix your parking today.</p>
                 <!--<p>-->
-                    <!--<i class="fa fa-smile-o fa-message"></i>-->
-                    <!--<i class="fa fa-id-badge fa-message" style="margin-left: 5px"></i>-->
-                    <!--<i class="fa fa-warning fa-message" style="margin-left: 5px"></i>-->
+                <!--<i class="fa fa-smile-o fa-message"></i>-->
+                <!--<i class="fa fa-id-badge fa-message" style="margin-left: 5px"></i>-->
+                <!--<i class="fa fa-warning fa-message" style="margin-left: 5px"></i>-->
                 <!--</p>-->
             </div>
 
@@ -93,4 +100,6 @@
             <span class="fa-orange-label" style="margin-left: 5px;">SATISFIED TENANTS.</span>
         </div>
     </div>
+
+
 </div>

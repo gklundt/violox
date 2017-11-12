@@ -17,7 +17,8 @@ var VioPermitLgComponent = (function () {
         this._modal = x.getSmallModal();
     }
     VioPermitLgComponent.prototype.openModal = function () {
-        return this._modal.showModal();
+        this._modal.showModal = true;
+        this._modal.showVideo = false;
     };
     VioPermitLgComponent = __decorate([
         core_1.Component({

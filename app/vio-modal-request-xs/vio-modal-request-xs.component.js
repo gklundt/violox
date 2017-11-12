@@ -12,12 +12,28 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var requestDemo_1 = require("../requestDemo");
+var modal_service_1 = require("../modal.service");
 var VioModalRequestXsComponent = (function () {
-    function VioModalRequestXsComponent(h) {
+    function VioModalRequestXsComponent(h, controller) {
         this.h = h;
+        this.controller = controller;
         this.submitted = false;
         this.data = new requestDemo_1.RequestDemo();
     }
+    Object.defineProperty(VioModalRequestXsComponent.prototype, "showVideo", {
+        get: function () {
+            return this.controller.getSmallModal().showVideo ? "block" : "none";
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(VioModalRequestXsComponent.prototype, "showModal", {
+        get: function () {
+            return this.controller.getSmallModal().showModal ? "block" : "none";
+        },
+        enumerable: true,
+        configurable: true
+    });
     VioModalRequestXsComponent.prototype.onSubmit = function () {
         this.body = new FormData();
         this.body.append("request_name", this.data.request_name);
@@ -31,11 +47,13 @@ var VioModalRequestXsComponent = (function () {
         this.hideModal();
     };
     // When the user clicks on the button, open the modal
-    VioModalRequestXsComponent.prototype.showModal = function () {
-        document.getElementById("myModal").style.display = "block";
-    };
+    // public showModal(): any {
+    //     this.controller.getSmallModal().showModal = true;
+    //     document.getElementById("myModal").style.display = "block";
+    // }
     // When the user clicks on <span> (x), close the modal
     VioModalRequestXsComponent.prototype.hideModal = function () {
+        this.controller.getSmallModal().showModal = false;
         document.getElementById("myModal").style.display = "none";
     };
     // When the user clicks anywhere outside of the modal, close it
@@ -52,7 +70,7 @@ var VioModalRequestXsComponent = (function () {
             styleUrls: ["./app/vio-modal-request-xs/vio-modal-request-xs.component.css"]
         }),
         core_1.Injectable(),
-        __param(0, core_1.Inject(http_1.Http))
+        __param(0, core_1.Inject(http_1.Http)), __param(1, core_1.Inject(modal_service_1.ModalService))
     ], VioModalRequestXsComponent);
     return VioModalRequestXsComponent;
 }());

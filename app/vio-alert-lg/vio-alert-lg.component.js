@@ -17,13 +17,14 @@ var VioAlertLgComponent = (function () {
         this._modal = x.getSmallModal();
     }
     VioAlertLgComponent.prototype.openModal = function () {
-        return this._modal.showModal();
+        this._modal.showModal = true;
+        this._modal.showVideo = false;
     };
     VioAlertLgComponent = __decorate([
         core_1.Component({
             selector: "vio-alert-lg",
             templateUrl: "./app/vio-alert-lg/vio-alert-lg.component.html",
-            styleUrls: ["./app/vio-alert-lg/vio-alert-lg.component.css"]
+            styleUrls: ["./app/vio-alert-lg/vio-alert-lg.component.css"],
         }),
         __param(0, core_1.Inject(modal_service_1.ModalService))
     ], VioAlertLgComponent);

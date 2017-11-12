@@ -1,7 +1,7 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
 import {FormsModule} from "@angular/forms";
-import {HttpModule} from "@angular/http";
+import {HttpModule, Http} from "@angular/http";
 import {AppComponent} from "./app.component";
 // import {AccordionModule, TabsModule} from "ng2-bootstrap";
 import {Angular2FontawesomeModule} from "angular2-fontawesome/angular2-fontawesome";
@@ -32,6 +32,10 @@ import {VioPermitMdComponent} from "./vio-permit-md/vio-permit-md.component";
 import {VioPermitLgComponent} from "./vio-permit-lg/vio-permit-lg.component";
 
 import {ModalService} from "./modal.service";
+import {ShowVideoController} from "./showVideoController";
+
+
+
 
 @NgModule({
     imports: [
@@ -68,7 +72,7 @@ import {ModalService} from "./modal.service";
         , VioAlertLgComponent
         , VioHomeComponent
     ],
-    providers: [ModalService],
+    providers: [{provide: ModalService, useValue: new ModalService()}],
     bootstrap: [AppComponent]
 })
 export class AppModule {

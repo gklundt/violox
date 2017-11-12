@@ -78,7 +78,7 @@ var AppModule = (function () {
                 vio_alert_lg_component_1.VioAlertLgComponent,
                 vio_home_component_1.VioHomeComponent
             ],
-            providers: [modal_service_1.ModalService],
+            providers: [{ provide: modal_service_1.ModalService, useValue: new modal_service_1.ModalService() }],
             bootstrap: [app_component_1.AppComponent]
         })
     ], AppModule);

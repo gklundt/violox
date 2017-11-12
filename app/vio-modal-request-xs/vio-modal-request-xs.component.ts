@@ -1,6 +1,7 @@
 import {Component, HostListener, Injectable, Inject} from "@angular/core";
 import {Http} from "@angular/http";
 import {RequestDemo} from "../requestDemo";
+import {ModalService} from "../modal.service";
 
 @Component({
     selector: "vio-modal-request-xs",
@@ -10,15 +11,22 @@ import {RequestDemo} from "../requestDemo";
 
 @Injectable()
 export class VioModalRequestXsComponent {
+    get showVideo(): string {
+        return this.controller.getSmallModal().showVideo ? "block" : "none";
+    }
+
+    get showModal(): string {
+        return this.controller.getSmallModal().showModal ? "block" : "none";
+    }
+
     private data: RequestDemo;
+    private body: FormData;
 
-
-    constructor(@Inject(Http) private h: Http) {
+    constructor(@Inject(Http) private h: Http, @Inject(ModalService) private controller: ModalService) {
         this.data = new RequestDemo();
     }
 
-    submitted = false;
-    private body: FormData;
+    private submitted = false;
 
 
     onSubmit() {
@@ -37,12 +45,14 @@ export class VioModalRequestXsComponent {
     }
 
     // When the user clicks on the button, open the modal
-    public showModal(): any {
-        document.getElementById("myModal").style.display = "block";
-    }
+    // public showModal(): any {
+    //     this.controller.getSmallModal().showModal = true;
+    //     document.getElementById("myModal").style.display = "block";
+    // }
 
     // When the user clicks on <span> (x), close the modal
     public hideModal(): any {
+        this.controller.getSmallModal().showModal = false;
         document.getElementById("myModal").style.display = "none";
     }
 

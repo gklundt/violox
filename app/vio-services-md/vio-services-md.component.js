@@ -17,7 +17,8 @@ var VioServicesMdComponent = (function () {
         this._modal = x.getSmallModal();
     }
     VioServicesMdComponent.prototype.openModal = function () {
-        return this._modal.showModal();
+        this._modal.showModal = true;
+        this._modal.showVideo = false;
     };
     VioServicesMdComponent = __decorate([
         core_1.Component({
