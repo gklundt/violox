@@ -1,5 +1,7 @@
 .permit-logo {
-    background: url('/public/assets/images/tenpark-533x400.png') no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background: url('/public/assets/images/tenpark-533x400.png') no-repeat center;*/
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;

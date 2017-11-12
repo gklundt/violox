@@ -1,7 +1,7 @@
 .alert-logo{
     background-repeat: no-repeat;
     background-position: 50px -93px;
-    background-image: url('/public/assets/images/MobileAlerts.png');
+    /*background-image: url('/public/assets/images/MobileAlerts.png');*/
     -webkit-background-size: cover;
     -moz-background-size:  cover;
     -o-background-size:  cover;

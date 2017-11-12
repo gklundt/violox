@@ -11,8 +11,9 @@
 
   },
   "exclude": [
-    "node_modules",
+    "node_modules/**/*.*",
     "**/*-aot.ts",
-    "/app/scripts/**/*.*"
+    "/app/scripts/**/*.*",
+    "dist/**/*.*"
   ]
 }

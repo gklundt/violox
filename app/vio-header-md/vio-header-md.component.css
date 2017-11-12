@@ -1,12 +1,12 @@
-.home-image {
-    background: #1d2f45 url('/public/assets/images/lg_barnvid.png') no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    top: 0;
-    left: 0;
-}
+/*.home-image {*/
+    /*background: #1d2f45 url('/public/assets/images/lg_barnvid.png') no-repeat center;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*-o-background-size: cover;*/
+    /*background-size: cover;*/
+    /*top: 0;*/
+    /*left: 0;*/
+/*}*/
 
 #head-vid {
     position: absolute;

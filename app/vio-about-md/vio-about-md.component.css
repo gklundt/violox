@@ -1,5 +1,5 @@
-.home-image {
-    background: url('/public/assets/images/weserve_blue_overlay_320x182.png') no-repeat center;
+.about-home-image {
+    /*background: url('/public/assets/images/weserve_blue_overlay_320x182.png') no-repeat center;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

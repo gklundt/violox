@@ -1,5 +1,7 @@
 .enforcement-logo {
-    background: url('/public/assets/images/barnaclephoto.jpeg') no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background: url('/public/assets/images/barnaclephoto.jpeg') no-repeat center;*/
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;

@@ -34,13 +34,15 @@ import {output as pagespeed} from 'psi';
 import pkg from './package.json';
 import sass from 'gulp-sass';
 
+let browserify = require('browserify');
+
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 // Lint JavaScript
 gulp.task('lint', () =>
-    gulp.src(['public/assets/scripts/**/*.js', '!node_modules/**'])
-        .pipe($.eslint())
+    gulp.src(['!**/*.min.js','public/assets/scripts/**/*.js', '!node_modules/**'])
+        .pipe($.eslint({fix: true}))
         .pipe($.eslint.format())
         .pipe($.if(!browserSync.active, $.eslint.failAfterError()))
 );
@@ -48,7 +50,7 @@ gulp.task('lint', () =>
 // Sass
 gulp.task('sass', () => {
     return gulp.src('public/assets/styles/*.scss')
-        .pipe(sass())
+        .pipe(sass({outputStyle: 'compressed'}))
         .on('error', sass.logError)
         .pipe(gulp.dest('public/assets/styles'))
         .pipe(gulp.dest('dist/public/assets/styles'));
@@ -57,10 +59,10 @@ gulp.task('sass', () => {
 // Optimize images
 gulp.task('images', () =>
     gulp.src('public/assets/images/**/*')
-        .pipe($.cache($.imagemin({
-            progressive: true,
-            interlaced: true
-        })))
+        // .pipe($.cache($.imagemin({
+        //     progressive: true,
+        //     interlaced: true
+        // })))
         .pipe(gulp.dest('dist/public/assets/images'))
         .pipe($.size({title: 'images'}))
 );
@@ -113,7 +115,8 @@ gulp.task('styles', () => {
         .pipe($.newer('.tmp/public/assets/styles'))
         .pipe($.sourcemaps.init())
         .pipe($.sass({
-            precision: 10
+            precision: 10,
+            outputStyle: 'compressed'
         }).on('error', $.sass.logError))
         .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
         .pipe(gulp.dest('.tmp/public/assets/styles'))
@@ -126,26 +129,36 @@ gulp.task('styles', () => {
         .pipe(gulp.dest('public/assets/styles'));
 });
 
+
 // Concatenate and minify JavaScript. Optionally transpiles ES2015 code to ES5.
 // to enable ES2015 support remove the line `"only": "gulpfile.babel.js",` in the
 // `.babelrc` file.
-gulp.task('scripts', () =>
-    gulp.src([
-        'public/assets/scripts/main.js'
-    ])
-        .pipe($.newer('.tmp/scripts'))
-        .pipe($.sourcemaps.init())
-        .pipe($.babel())
-        .pipe($.sourcemaps.write())
-        .pipe(gulp.dest('.tmp/public/assets/scripts'))
-        .pipe($.concat('main.min.js'))
-        .pipe($.uglify({preserveComments: 'some'}))
-        // Output files
-        .pipe($.size({title: 'scripts'}))
-        .pipe($.sourcemaps.write('.'))
-        .pipe(gulp.dest('dist/public/assets/scripts'))
-        .pipe(gulp.dest('.tmp/public/assets/scripts'))
+gulp.task('scripts', () => {
+
+        // let b = browserify({
+        //     entries: 'public/assets/scripts/main.js',
+        //     debug: true
+        // });
+
+        gulp.src([
+            'public/assets/scripts/main.js'
+        ])
+        // return b.bundle()
+            .pipe($.newer('.tmp/scripts'))
+            .pipe($.sourcemaps.init())
+            .pipe($.babel())
+            .pipe($.sourcemaps.write())
+            .pipe(gulp.dest('.tmp/public/assets/scripts'))
+            .pipe($.concat('main.min.js'))
+            // .pipe($.uglify({output.comments(: 'some'}))
+            // Output files
+            .pipe($.size({title: 'scripts'}))
+            .pipe($.sourcemaps.write('.'))
+            .pipe(gulp.dest('dist/public/assets/scripts'))
+            .pipe(gulp.dest('.tmp/public/assets/scripts'))
+    }
 );
+
 
 // Scan your HTML for assets & optimize them
 gulp.task('html', () => {
@@ -217,7 +230,9 @@ gulp.task('serve:dist', ['default'], () =>
 gulp.task('default', ['clean'], cb =>
     runSequence(
         'styles',
-        ['lint', 'html', 'scripts', 'images', 'videos', 'copy', 'ng-app', 'sass'],
+        ['lint', 'html', 'scripts',  'copy', 'ng-app', 'sass'],
+        'images',
+        'videos',
         'copy-ng-scripts',
         cb
     )

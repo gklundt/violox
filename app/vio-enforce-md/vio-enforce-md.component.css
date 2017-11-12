@@ -1,7 +1,7 @@
 .enforcement-logo {
     background-repeat: no-repeat;
     background-position: -85px -23px;
-    background-image: url('/public/assets/images/barnaclephoto.jpeg');
+    /*background-image: url('/public/assets/images/barnaclephoto.jpeg');*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
