@@ -19,6 +19,14 @@ export class VioModalRequestXsComponent {
         return this.controller.getSmallModal().showModal ? "block" : "none";
     }
 
+    get showForm(): boolean {
+        return !this.controller.getSmallModal().showThankYou;
+    }
+
+    get showThanks(): boolean {
+        return this.controller.getSmallModal().showThankYou;
+    }
+
     private data: RequestDemo;
     private body: FormData;
 
@@ -41,14 +49,13 @@ export class VioModalRequestXsComponent {
             .post("http://violox.com/cgi-bin/notify-sales"
                 , this.body)
             .subscribe();
-        this.hideModal();
+        this.controller.getSmallModal().showThankYou = true;
     }
 
-    // When the user clicks on the button, open the modal
-    // public showModal(): any {
-    //     this.controller.getSmallModal().showModal = true;
-    //     document.getElementById("myModal").style.display = "block";
-    // }
+    onClose() {
+        this.controller.getSmallModal().showThankYou = false;
+        this.hideModal();
+    }
 
     // When the user clicks on <span> (x), close the modal
     public hideModal(): any {
@@ -61,7 +68,6 @@ export class VioModalRequestXsComponent {
     onWindowClick() {
         this.hideModal();
     }
-
 
 }
 

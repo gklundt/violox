@@ -11,6 +11,7 @@ var ShowVideoController = (function () {
     function ShowVideoController() {
         this._showVideo = false;
         this._showModal = false;
+        this._showThankYou = false;
     }
     Object.defineProperty(ShowVideoController.prototype, "showModal", {
         get: function () {
@@ -28,6 +29,16 @@ var ShowVideoController = (function () {
         },
         set: function (value) {
             this._showVideo = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(ShowVideoController.prototype, "showThankYou", {
+        get: function () {
+            return this._showThankYou;
+        },
+        set: function (value) {
+            this._showThankYou = value;
         },
         enumerable: true,
         configurable: true

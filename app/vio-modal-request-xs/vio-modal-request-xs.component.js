@@ -34,6 +34,20 @@ var VioModalRequestXsComponent = (function () {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(VioModalRequestXsComponent.prototype, "showForm", {
+        get: function () {
+            return !this.controller.getSmallModal().showThankYou;
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(VioModalRequestXsComponent.prototype, "showThanks", {
+        get: function () {
+            return this.controller.getSmallModal().showThankYou;
+        },
+        enumerable: true,
+        configurable: true
+    });
     VioModalRequestXsComponent.prototype.onSubmit = function () {
         this.body = new FormData();
         this.body.append("request_name", this.data.request_name);
@@ -44,13 +58,12 @@ var VioModalRequestXsComponent = (function () {
         this.h
             .post("http://violox.com/cgi-bin/notify-sales", this.body)
             .subscribe();
+        this.controller.getSmallModal().showThankYou = true;
+    };
+    VioModalRequestXsComponent.prototype.onClose = function () {
+        this.controller.getSmallModal().showThankYou = false;
         this.hideModal();
     };
-    // When the user clicks on the button, open the modal
-    // public showModal(): any {
-    //     this.controller.getSmallModal().showModal = true;
-    //     document.getElementById("myModal").style.display = "block";
-    // }
     // When the user clicks on <span> (x), close the modal
     VioModalRequestXsComponent.prototype.hideModal = function () {
         this.controller.getSmallModal().showModal = false;

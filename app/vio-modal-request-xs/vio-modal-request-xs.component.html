@@ -9,11 +9,13 @@
                  style="width: 47px; height: 31px; ">
             <span class="close" (click)="hideModal()">&times;</span>
         </div>
-        <div [ngStyle]="{'display' : showVideo}" style="border: 0 none; background-color: #444444;">
-            <iframe src="https://player.vimeo.com/video/242300083" width="298" height="168" frameborder="0"
-                    webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div *ngIf="showForm">
+            <div [ngStyle]="{'display' : showVideo}" style="border: 0 none; background-color: #444444;">
+                <iframe src="https://player.vimeo.com/video/242300083" width="298" height="168" frameborder="0"
+                        webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="vio-modal-body" style="text-align: center">
+        <div *ngIf="showForm" class="vio-modal-body" style="text-align: center">
             <form name="form" (ngSubmit)="onSubmit()" #f="ngForm">
                 <input type="text" name="request_name" placeholder="Full Name" required class="vio-input"
                        [(ngModel)]="data.request_name" #requestName="ngModel">
@@ -28,6 +30,14 @@
                 <button class="btn btn-default">GET A DEMO</button>
             </form>
         </div>
+
+        <div *ngIf="showThanks" class="vio-modal-body" style="text-align: center;">
+            <p class="modal-note-text-title">Thank you!.</p>
+            <p class="modal-note-text-body">Your information was submitted successfully.</p>
+            <p class="modal-note-text-body-sub">One of our associates will contact you as soon as possible.</p>
+            <button (click)="onClose()" class="btn btn-default">CLOSE</button>
+        </div>
+
         <div class="vio-modal-footer">
             <div style="float: left;">
                 <div style="display: inline-block; text-align: center">
@@ -59,7 +69,8 @@
             <span class="close" (click)="hideModal()">&times;</span>
         </div>
         <div style="border: 0 none; background-color: #444444;">
-            <iframe [ngStyle]="{'display' : showVideo}" src="https://player.vimeo.com/video/242300083" width="520" height="292" frameborder="0"
+            <iframe [ngStyle]="{'display' : showVideo}" src="https://player.vimeo.com/video/242300083" width="520"
+                    height="292" frameborder="0"
                     webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <!--<iframe src="https://player.vimeo.com/video/242300083" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
             <div class="vio-modal-body-note" style="text-align: center; float:left;">
@@ -73,7 +84,7 @@
                 <!--</p>-->
             </div>
 
-            <div class="vio-modal-body" style="text-align: center; float: right">
+            <div *ngIf="showForm" class="vio-modal-body" style="text-align: center; float: right">
                 <form name="form" (ngSubmit)="onSubmit()" #f="ngForm">
                     <input type="text" name="request_name" placeholder="Full Name" required class="vio-input"
                            [(ngModel)]="data.request_name" #requestName="ngModel">
@@ -88,6 +99,14 @@
                     <button class="btn btn-default">GET A DEMO</button>
                 </form>
             </div>
+
+            <div *ngIf="showThanks" class="vio-modal-body" style="text-align: center; float: right">
+                <p class="modal-note-text-title">Thank you!.</p>
+                <p class="modal-note-text-body">Your information was submitted successfully.</p>
+                <p class="modal-note-text-body-sub">One of our associates will contact you as soon as possible.</p>
+                <button (click)="onClose()" class="btn btn-default">CLOSE</button>
+            </div>
+
         </div>
         <div class="vio-modal-footer" style="clear: both; text-align: center; padding-top: 15px;">
             <i class="fa fa-plus-circle fa-orange"></i>
