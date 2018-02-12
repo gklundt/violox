@@ -46,7 +46,7 @@ export class VioModalRequestXsComponent {
         this.body.append("request_email", this.data.request_email);
         this.body.append("request_phone", this.data.request_phone);
         this.h
-            .post("http://violox.com/cgi-bin/notify-sales"
+            .post("https://violox.com/cgi-bin/notify-sales"
                 , this.body)
             .subscribe();
         this.controller.getSmallModal().showThankYou = true;
