@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var showVideoController_1 = require("./showVideoController");
-var ModalService = (function () {
+var ModalService = /** @class */ (function () {
     function ModalService() {
         this._small = new showVideoController_1.ShowVideoController();
     }

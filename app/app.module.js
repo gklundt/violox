@@ -39,7 +39,7 @@ var vio_permit_xs_component_1 = require("./vio-permit-xs/vio-permit-xs.component
 var vio_permit_md_component_1 = require("./vio-permit-md/vio-permit-md.component");
 var vio_permit_lg_component_1 = require("./vio-permit-lg/vio-permit-lg.component");
 var modal_service_1 = require("./modal.service");
-var AppModule = (function () {
+var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([

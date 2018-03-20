@@ -13,7 +13,7 @@ var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var requestDemo_1 = require("../requestDemo");
 var modal_service_1 = require("../modal.service");
-var VioModalRequestXsComponent = (function () {
+var VioModalRequestXsComponent = /** @class */ (function () {
     function VioModalRequestXsComponent(h, controller) {
         this.h = h;
         this.controller = controller;

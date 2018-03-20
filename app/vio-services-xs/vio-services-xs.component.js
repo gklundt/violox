@@ -11,7 +11,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var modal_service_1 = require("../modal.service");
-var VioServicesXsComponent = (function () {
+var VioServicesXsComponent = /** @class */ (function () {
     function VioServicesXsComponent(x) {
         this.x = x;
         this._modal = x.getSmallModal();

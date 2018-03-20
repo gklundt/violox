@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var RequestDemo = (function () {
+var RequestDemo = /** @class */ (function () {
     function RequestDemo() {
         this.request_name = "";
         this.request_company = "";
